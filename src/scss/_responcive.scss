@@ -1,0 +1,146 @@
+@media (max-width: 1289px) {
+
+  .slide {
+    .title {
+      line-height: 23px;
+    }
+  }
+
+  .slick-dots {
+    bottom: -60px;
+  }
+
+  .reviews {
+    .holder-btn {
+      margin-top: 26px;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    right: -9px;
+    bottom: -61px;
+  }
+
+
+
+
+
+
+  .ui-accordion-content {
+    height: 490px !important;
+  }
+
+
+}
+
+@media (max-width: 1023px) {
+
+  .about-us {
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-bottom: 150px;
+
+    .img-about-us {
+      position: inherit;
+      max-width: 100%;
+    }
+
+    .text {
+      padding: 72px 23px;
+
+      .content {
+        max-width: 100%;
+
+        p {
+          font-size: 15px;
+        }
+      }
+
+      h5 {
+        font-size: 18px;
+      }
+
+      h2 {
+        font-size: 38px;
+        line-height: 48px;
+      }
+    }
+  }
+
+
+
+  .ui-accordion-content {
+    height: 550px !important;
+  }
+
+
+  .feedback-slider {
+    height: 360px;
+  }
+
+
+
+  iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .navigation {
+    display: none;
+  }
+
+
+
+
+
+  .accordion-block {
+    h5 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .accordion-answers {
+    text-align: center;
+  }
+
+  .ui-accordion-content {
+    height: 100% !important;
+  }
+
+  .ui-accordion {
+    .ui-accordion-header {
+      padding: 20px 30px;
+      margin-top: 30px;
+    }
+  }
+
+
+
+
+
+
+  .feedback-slider {
+    height: 100%;
+    margin-bottom: 70px;
+  }
+
+  .slide {
+    padding: 25px 20px;
+  }
+
+  .slick-dots {
+    bottom: -25px;
+    left: 55px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    right: 80px;
+    bottom: -50px;
+  }
+
+}

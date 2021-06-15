@@ -1,0 +1,323 @@
+
+/*стили на меню*/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .dropdown-menu {
+    position: relative;
+    min-width: 110px;
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 58%;
+      right: 0;
+      bottom: 0;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/header-vector.png);
+    }
+
+    &:hover {
+      .dropdown-list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: block;
+        height: 200px;
+        box-shadow: 0 0 20px 0 rgba(34, 60, 80, 0.4);
+        border-radius: 25px;
+        background: #fff;
+      }
+    }
+  }
+  .dropdown-list {
+    display: none;
+    margin-top: 25px;
+    padding: 25px;
+  }
+}
+
+
+/*стили на скрол*/
+.mCustomScrollBox {
+  position: relative;
+}
+
+.mCSB_scrollTools {
+  &:after {
+    position: absolute;
+    background: #DBDBDB;
+    content: '';
+    width: 2px;
+    top: 0;
+    left: 7px;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.about-us {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-bottom: 194px;
+
+  .img-about-us {
+    position: absolute;
+    top: 45px;
+    left: 0;
+  }
+
+  .text {
+    padding: 62px 23px 83px 250px;
+
+    .bunny {
+      position: absolute;
+      right: 16px;
+      top: -178px;
+    }
+
+    h5 {
+      line-height: 37px;
+    }
+
+    h2 {
+      font-size: 55px;
+      line-height: 58px;
+      text-align: left;
+      margin-bottom: 33px;
+    }
+
+    .content {
+      height: 270px;
+
+      p {
+        max-width: 535px;
+      }
+    }
+  }
+}
+
+.mCSB_dragger_bar {
+  background-color: #F68B1F!important;
+}
+
+.mCSB_draggerRail {
+  background-color: transparent!important;
+}
+
+#mCSB_1_scrollbar_vertical {
+  &:after {
+    position: absolute;
+    background: #DBDBDB;
+    content: '';
+    width: 2px;
+    top: 0;
+    left: 7px;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+
+
+
+/*стили на аккордион*/
+.ui-icon {
+  display: none;
+}
+
+.accordion-answers {
+  width: 100%;
+}
+
+.ui-accordion .ui-accordion-header {
+  background: #fff;
+  color: #58595B;
+  border: none;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 30px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 53px;
+  padding: 20px 77px 20px 70px;
+  box-shadow: 0 0 15px 0 rgba(34, 60, 80, 0.06);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: #EDEEEE;
+  }
+}
+
+.ui-accordion-header-active {
+  button {
+    &:after {
+      transform: rotate(-45deg);
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.ui-accordion-content {
+  padding: 0;
+  border: none;
+  height: 487px;
+}
+
+.accordion-block {
+  h5 {
+    font-size: 28px;
+  }
+}
+
+
+
+
+
+
+/*стили на карусель*/
+.feedback-slider {
+  width: 100%;
+  position: relative;
+
+  .slick-slide {
+    padding: 0 15px;
+  }
+}
+
+.slick-track {
+  height: 560px;
+  top: 24px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 0;
+  height: 17px;
+  width: 50px;
+  margin-top: -70px;
+  left: 0;
+  z-index: 5;
+  border: none;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  left: auto;
+  right: -39px;
+  top: auto;
+  bottom: 30px;
+  background: transparent;
+  font-size: 0;
+  margin-right: 15px;
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.slick-prev {
+  margin-right: 15px;
+
+  &:after {
+    background-image: url(../images/vector-l.png);
+    transform: rotate(180deg);
+  }
+}
+
+.slick-next {
+  margin-right: 65px;
+
+  &:after {
+    background-image: url(../images/vector-l.png);
+  }
+}
+
+.slick-dots {
+  display: flex;
+  width: 190px;
+  overflow: hidden;
+  position: absolute;
+  right: 112px;
+  bottom: 31px;
+
+  button {
+    font-size: 0;
+    border: none;
+    background: #E7E7E7;
+    margin-right: 15px;
+
+    &:hover {
+      background: #F68B1F;
+    }
+  }
+}
+
+.slick-active {
+  button {
+    background: #F68B1F;
+  }
+}
+
+.feedback-slider button {
+  border-radius: 5px;
+  padding: 3px 25px;
+
+  &:hover {
+    background: #F68B1F;
+  }
+}
+
+.slide {
+  padding: 45px 30px;
+
+  .title {
+    line-height: 30px;
+    text-align: center;
+    border-bottom: solid 3px #00B63E;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+
+
+/*стили на карту*/
+.map {
+  margin-bottom: 73px;
+  margin-top: -61px;
+  position: relative;
+  z-index: 2;
+
+  iframe {
+    width: 100%;
+  }
+}
+
