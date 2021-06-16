@@ -24,7 +24,7 @@
   right: 0;
 }
 
-$mobile: 767px;
+$mobile: 3000px;
 
 @mixin breakpoint($rule){
   @media only screen and (max-width: #{$rule}){
@@ -34,10 +34,10 @@ $mobile: 767px;
 
 .btn-menu {
   position: absolute;
-  top: 7px;
-  right: 15px;
+  top: 18px;
+  right: 60px;
   height: 27px;
-  width: 29px;
+  width: 55px;
   cursor: pointer;
   transition: all .25s ease;
   display: none;
@@ -48,9 +48,9 @@ $mobile: 767px;
   }
 
   span {
-    background: #213041;
+    background: #fff;
     border: none;
-    height: 2px;
+    height: 6px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -59,12 +59,13 @@ $mobile: 767px;
     cursor: pointer;
   }
 
-  .middle {
-    top: 8px;
+  .bottom {
+    height: 3px;
+    top: 14px;
   }
 
-  .bottom {
-    top: 16px;
+  .top {
+    height: 6px;
   }
 
   &.active {
