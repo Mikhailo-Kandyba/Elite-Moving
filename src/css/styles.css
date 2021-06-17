@@ -720,7 +720,7 @@ h6 {
     margin-left: -7px; }
 
 .the-cost {
-  margin-bottom: 160px; }
+  margin-bottom: 206px; }
   .the-cost .holder-title {
     display: flex;
     justify-content: space-between;
@@ -853,6 +853,182 @@ h6 {
     background: #488E9A;
     color: #fff;
     z-index: 20; }
+
+.staff-background {
+  background-image: url("../images/staff-background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 759px;
+  position: relative;
+  padding-top: 81px; }
+  .staff-background:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #484848;
+    opacity: 0.8; }
+  .staff-background .holder-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px; }
+    .staff-background .holder-title .title-area {
+      margin-bottom: 0; }
+      .staff-background .holder-title .title-area .line:after {
+        left: -7px;
+        top: 20px;
+        background: #fff; }
+      .staff-background .holder-title .title-area .point:before {
+        left: 80px;
+        top: 17px;
+        background: #fff; }
+      .staff-background .holder-title .title-area .title {
+        padding-top: 0;
+        padding-left: 100px;
+        color: #fff; }
+        .staff-background .holder-title .title-area .title h5 {
+          font-size: 35px;
+          line-height: 44px;
+          letter-spacing: 0;
+          margin-bottom: -1px;
+          color: #fff; }
+    .staff-background .holder-title .title-wrap-position {
+      z-index: 20;
+      margin-bottom: 0; }
+      .staff-background .holder-title .title-wrap-position .title-wrap .title {
+        color: #fff; }
+      .staff-background .holder-title .title-wrap-position .title-wrap .title-number {
+        color: #fff; }
+      .staff-background .holder-title .title-wrap-position .title-wrap .title-line {
+        margin-top: 12px;
+        background: #fff; }
+        .staff-background .holder-title .title-wrap-position .title-wrap .title-line:after {
+          background: #ffff;
+          right: 103px; }
+
+.staff-wrapper .wrap-slid-list {
+  display: flex; }
+  .staff-wrapper .wrap-slid-list .service-guarantee {
+    max-width: 512px;
+    padding-left: 43px;
+    padding-top: 18px;
+    margin-right: 23px; }
+    .staff-wrapper .wrap-slid-list .service-guarantee :nth-child(2) div p {
+      margin-bottom: -18px; }
+    .staff-wrapper .wrap-slid-list .service-guarantee :nth-child(3) div p {
+      margin-bottom: -18px; }
+    .staff-wrapper .wrap-slid-list .service-guarantee li strong {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 37px; }
+    .staff-wrapper .wrap-slid-list .service-guarantee li div:after {
+      top: 18px;
+      background: #fff; }
+    .staff-wrapper .wrap-slid-list .service-guarantee li div h5 {
+      font-weight: 600;
+      color: #FFF2F2;
+      margin-left: 59px;
+      margin-top: -3px;
+      margin-bottom: 6px; }
+    .staff-wrapper .wrap-slid-list .service-guarantee li div p {
+      color: #fff;
+      margin-bottom: -8px; }
+  .staff-wrapper .wrap-slid-list .photos-of-employees {
+    width: 738px;
+    margin-top: 8px; }
+    .staff-wrapper .wrap-slid-list .photos-of-employees .background {
+      position: relative;
+      height: 380px;
+      width: 100%;
+      overflow: hidden; }
+      .staff-wrapper .wrap-slid-list .photos-of-employees .background:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background: #EDEDED;
+        opacity: 0.3; }
+      .staff-wrapper .wrap-slid-list .photos-of-employees .background .photo {
+        height: 100%; }
+    .staff-wrapper .wrap-slid-list .photos-of-employees .slick-current {
+      width: 387px !important; }
+    .staff-wrapper .wrap-slid-list .photos-of-employees .slick-track {
+      height: 200px; }
+    .staff-wrapper .wrap-slid-list .photos-of-employees .slick-next,
+    .staff-wrapper .wrap-slid-list .photos-of-employees .slick-arrow {
+      font-size: 0;
+      background: transparent;
+      border: none;
+      position: relative;
+      z-index: 20; }
+      .staff-wrapper .wrap-slid-list .photos-of-employees .slick-next:after,
+      .staff-wrapper .wrap-slid-list .photos-of-employees .slick-arrow:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 19px;
+        height: 15px;
+        background-image: url("../images/vector-2.png");
+        background-repeat: no-repeat; }
+    .staff-wrapper .wrap-slid-list .photos-of-employees .slick-next {
+      right: -57%;
+      top: -11px; }
+    .staff-wrapper .wrap-slid-list .photos-of-employees .slick-prev {
+      right: -53%;
+      bottom: -420px;
+      transform: rotate(180deg); }
+    .staff-wrapper .wrap-slid-list .photos-of-employees .slick-dots {
+      display: flex;
+      margin-top: -26px;
+      position: relative; }
+      .staff-wrapper .wrap-slid-list .photos-of-employees .slick-dots:after {
+        content: "";
+        position: absolute;
+        width: 344px;
+        height: 1px;
+        top: 15px;
+        left: 0;
+        background: #fff; }
+      .staff-wrapper .wrap-slid-list .photos-of-employees .slick-dots button {
+        font-size: 0;
+        background: #55B197;
+        border: none;
+        padding: 2px 12px;
+        position: relative;
+        z-index: 5; }
+
+.seal-text {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -8px;
+  margin-right: 8px;
+  position: relative; }
+  .seal-text .text {
+    font-weight: 600;
+    color: #fff;
+    background: #488E9A;
+    max-width: 541px;
+    padding: 9px 11px 10px 109px;
+    position: relative;
+    margin-left: 158px; }
+    .seal-text .text:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 86px;
+      width: 1px;
+      height: 54px;
+      background: #fff; }
+  .seal-text .seal {
+    position: absolute;
+    top: -58px;
+    left: 26%; }
 
 @media (max-width: 1289px) {
   .slide .title {
