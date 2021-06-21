@@ -222,7 +222,6 @@
 .banner {
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   min-height: 897px;
   position: relative;
   margin-top: -99px;
@@ -857,7 +856,7 @@
 
 .full-construction {
   background-image: url("../images/full-construction.png");
-  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 266px;
   position: relative;
@@ -1164,7 +1163,6 @@
 
 .staff-background {
   background-image: url("../images/staff-background.png");
-  background-size: 100%;
   background-repeat: no-repeat;
   min-height: 759px;
   position: relative;
@@ -1722,7 +1720,7 @@
 
 .footer {
   background-image: url("../images/footer-background.png");
-  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 348px;
   position: relative;
