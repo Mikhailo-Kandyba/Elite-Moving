@@ -1561,6 +1561,14 @@ h6 {
       transform: rotate(43deg); }
 
 @media (max-width: 1309px) {
+  .mobile-menu-navigation .languages:before {
+    left: 8px; }
+  .mobile-menu-navigation .title:after {
+    left: 520px; }
+  .mobile-menu-navigation li:before {
+    height: 814px;
+    left: 506px;
+    top: -326px; }
   .header:before {
     right: 158px; }
   .form-area {
@@ -1656,4 +1664,8 @@ h6 {
   .footer .the-lists .elite-moving {
     margin-right: 17px; }
     .footer .the-lists .elite-moving:after {
-      right: -11px; } }
+      right: -11px; }
+  .modal-content img {
+    display: none; }
+  .modal {
+    width: 74% !important; } }

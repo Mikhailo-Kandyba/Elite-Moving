@@ -1,4 +1,26 @@
 @media (max-width: 1309px) {
+  .mobile-menu-navigation {
+    .languages {
+      &:before {
+        left: 8px;
+      }
+    }
+
+    .title {
+      &:after {
+        left: 520px;
+      }
+    }
+
+    li {
+      &:before {
+        height: 814px;
+        left: 506px;
+        top: -326px;
+      }
+    }
+  }
+
   .header {
     &:before {
       right: 158px;
@@ -205,4 +227,29 @@
       }
     }
   }
+
+  .modal-content {
+    img {
+      display: none;
+    }
+  }
+
+  .modal {
+    width: 74% !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
