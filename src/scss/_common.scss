@@ -1714,6 +1714,8 @@
   }
 
   .form-area {
+    position: relative;
+    z-index: 50;
     margin-top: 0;
   }
 }

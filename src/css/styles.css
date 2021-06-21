@@ -1317,6 +1317,8 @@ h6 {
     .wrapper-question-answer .questions .ui-state-default:hover {
       border-bottom: none !important; }
   .wrapper-question-answer .form-area {
+    position: relative;
+    z-index: 50;
     margin-top: 0; }
 
 .footer {
