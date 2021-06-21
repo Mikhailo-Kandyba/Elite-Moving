@@ -11,54 +11,100 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Prosto+One&display=swap" rel="stylesheet">
     <!--библиотека иконок-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
     <div id="wrapper">
-        <header class="header x-index-100">
+        <header class="header z-index-100">
             <section class="container header-wrapper">
-                <div class="decoration-wrapper">
+                <div class="decoration-wrapper z-index-100">
                     <span class="left"></span>
                     <span class="right"></span>
                 </div>
-                <a class="logo x-index" href="#">
+                <a class="logo z-index-100" href="#">
                     <img src="../images/logo.png" alt="logo">
                 </a>
                 <div class="btn-menu">
                     <span class="top"></span>
                     <span class="bottom"></span>
+                    <ul class="mobile-menu-navigation">
+                        <li class="languages">
+                            <a class="active" href="#">
+                                RU
+                            </a>
+                            <a href="#">
+                                UA
+                            </a>
+                        </li>
+                        <li CLASS="title">
+                            МЕНЮ
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                КВАРТИРНЫЙ ПЕРЕЕЗД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                ОФИСНЫЙ ПЕРЕЕЗД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                ПЕРЕЕЗД ДОМА
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                АВТОПАРК
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О НАС
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                БЛОГ
+                            </a>
+                        </li>
+                        <li class="numbers">
+                            <a href="tel:+380981234567">+38098 123 45 67</a>
+                            <a href="tel:+380981234567">+38098 123 45 67</a>
+                            <a href="tel:+380981234567">+38098 123 45 67</a>
+                        </li>
+                        <li class="social-networks">
+                                <ul class="list">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../images/viber.png" alt="viber">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                    </ul>
                 </div>
-                <ul class="mobile-menu-navigation">
-                    <li>
-                        <a href="#">
-                            Про нас
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Ціни
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Пакетні програми
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Лікарі
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Відгуки
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Контакти
-                        </a>
-                    </li>
-                </ul>
             </section>
         </header>
         <main>
@@ -68,8 +114,8 @@
                         <span class="border-left"></span>
                         <span class="border-right"></span>
                     </div>
-                    <div class="title-btn-wrapper x-index">
-                        <div class="title-area x-index">
+                    <div class="title-btn-wrapper">
+                        <div class="title-area z-index">
                             <span class="line"></span>
                             <span class="point"></span>
                             <div class="title">
@@ -89,7 +135,7 @@
                     <span class="border-left"></span>
                     <span class="border-right"></span>
                 </div>
-                <div class="form-area background-blue x-index-100">
+                <div class="form-area background-blue z-index">
                     <div class="text">
                         <h5>ПОМОЖЕМ ПЕРЕВЕЗТИ ЛЮБЫЕ ВЕЩИ БЕЗ ХАОСА</h5>
                         <p>
@@ -102,11 +148,13 @@
                             <input type="tel" id="tel" placeholder="+38 (_ _ _) _ _ _  _ _  _ _" name="tel" value="">
                         </div>
                         <div class="holder-btn">
-                            <button class="btn">ОСТАВИТЬ ЗАЯВКУ</button>
-                            <span>
+                            <a class="btn" href="#sub-modal" rel="modal:open">
+                                <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                            </a>
+                            <p>
                                 Нажимая кнопку «Рассчитать стоимость»,
                                 вы соглашаетесь с правилами
-                            </span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +180,7 @@
                         <span class="decor-border"></span>
                     </div>
                     <div class="position-wrap">
-                        <div class="title-area x-index">
+                        <div class="title-area">
                             <span class="line"></span>
                             <span class="point"></span>
                             <div class="title">
@@ -190,12 +238,13 @@
                 </div>
             </section>
             <section class="container service-wrapper">
+                <img class="decor-point-2" src="../images/decor-3.png" alt="decor">
                 <div class="side-border">
                     <span class="border-left"></span>
                     <span class="border-right"></span>
                 </div>
                 <div class="holder-title">
-                    <div class="title-area x-index">
+                    <div class="title-area z-index">
                         <span class="line"></span>
                         <span class="point"></span>
                         <div class="title">
@@ -272,7 +321,7 @@
                     <span class="border-right"></span>
                 </div>
                 <div class="holder-title">
-                    <div class="title-area x-index">
+                    <div class="title-area z-index">
                         <span class="line"></span>
                         <span class="point"></span>
                         <div class="title">
@@ -306,14 +355,14 @@
                     </div>
                 </div>
             </section>
-            <div class="full-construction x-index-100">
+            <div class="full-construction z-index-100">
                 <section class="container">
                     <div class="text">
                         <p>
                             ОЩУТИТЕ 100% ВНИМАНИЯ И ЗАБОТЫ
                             ЗАКАЗАВ КВАРТИРНЫЙ ПЕРЕЕЗД «ПОД КЛЮЧ»!
                         </p>
-                        <span class="line-decor x-index"></span>
+                        <span class="line-decor z-index"></span>
                     </div>
                 </section>
             </div>
@@ -323,7 +372,7 @@
                     <span class="border-right"></span>
                 </div>
                 <div class="holder-title">
-                    <div class="title-area x-index">
+                    <div class="title-area z-index">
                         <span class="line"></span>
                         <span class="point"></span>
                         <div class="title">
@@ -348,7 +397,7 @@
                     <span class="border-right"></span>
                 </div>
                 <div class="holder-title">
-                    <div class="title-area x-index">
+                    <div class="title-area z-index">
                         <span class="line"></span>
                         <span class="point"></span>
                         <div class="title">
@@ -399,7 +448,7 @@
                                 <a href="#">Сборка мебели, установка подключение электроприборов.</a>
                             </li>
                             <li>
-                                <div class="title-area x-index">
+                                <div class="title-area z-index">
                                     <span class="line"></span>
                                     <span class="point"></span>
                                 </div>
@@ -425,7 +474,7 @@
                         <span class="border-right"></span>
                     </div>
                     <div class="holder-title">
-                        <div class="title-area x-index">
+                        <div class="title-area z-index">
                             <span class="line"></span>
                             <span class="point"></span>
                             <div class="title">
@@ -440,7 +489,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="wrap-slid-list x-index ">
+                    <div class="wrap-slid-list z-index ">
                         <ul class="service-guarantee">
                             <li>
                                 <strong>01</strong>
@@ -507,7 +556,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="seal-text x-index">
+                    <div class="seal-text z-index">
                         <img class="seal" src="../images/seal.png" alt="seal">
                         <div class="text">
                             НА ОБЬЕКТЕ ВСЕГДА ПРИСУТСТВУЕТ БРИГАДИР,
@@ -516,9 +565,323 @@
                     </div>
                 </section>
             </div>
+            <section class="container our-everyday-life">
+                <div class="side-border">
+                    <span class="border-left"></span>
+                    <span class="border-right"></span>
+                </div>
+                <div class="holder-title">
+                    <div class="title-area z-index">
+                        <span class="line"></span>
+                        <span class="point"></span>
+                        <div class="title">
+                            <h5>ЧТО ЛУЧШЕ РАБОТ</h5>
+                            <h6>СКАЖЕТ О КОМПАНИИ?</h6>
+                        </div>
+                    </div>
+                    <div class="title-wrap-position">
+                        <div class="title-wrap">
+                            <span class="title">наши будни</span>
+                            <span class="title-line"></span>
+                            <span class="title-number">07</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-text">
+                    СМОТРИТЕ ВЫПОЛНЕННЫЕ ЗАДАЧИ, НАМ ЕСТЬ ЧТО РАССКАЗАТЬ И ПОКАЗАТЬ
+                </div>
+                <div class="wrap-list">
+                    <ul class="list-weekdays">
+                        <li class="list-item">
+                            <div class="background">
+                                <img class="photo" src="../images/weekdays-photo-1.png" alt="photo">
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="background">
+                                <img class="photo" src="../images/weekdays-photo-2.png" alt="photo">
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="background">
+                                <img class="photo" src="../images/weekdays-photo-3.png" alt="photo">
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="background">
+                                <img class="photo" src="../images/weekdays-photo-4.png" alt="photo">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="background">
+                        <img class="photo" src="../images/weekdays-photo-5.png" alt="photo">
+                    </div>
+                </div>
+            </section>
+            <section class="container wrapper-question-answer">
+                <div class="side-border">
+                    <span class="border-left"></span>
+                    <span class="border-right"></span>
+                </div>
+                <div class="holder-title">
+                    <div class="title-area z-index">
+                        <span class="line"></span>
+                        <span class="point"></span>
+                        <div class="title">
+                            <h5>ЧАСТО ЗАДАВАЕМЫЕ</h5>
+                            <h6>ВОПРОСЫ</h6>
+                        </div>
+                    </div>
+                    <div class="title-wrap-position">
+                        <div class="title-wrap">
+                            <span class="title">вопрос-ответ</span>
+                            <span class="title-line"></span>
+                            <span class="title-number">08</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtitle">
+                    <div class="title-service">
+                        <div class="text">
+                            <h5>САМЫЕ ЧАСТЫЕ ВОПРОСЫ И ОТВЕТЫ НА НИХЮ</h5>
+                            <h6>
+                                МИ СОБИРАЕМ ИХ В ХОДЕ РАЗГОВОРОВ С КЛИЕНТАМИ<br>И ДОБАВЛЯЕМ ИХ СЮДА, ЧТОБЫ КАЖДЫЙ ИМЕЛ ДОСТУП
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions">
+                    <div class="holder-accordion">
+                        <div class="accordion-answers">
+                            <div>
+                                <h5 class="title">
+                                    ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                                </h5>
+                                <div>
+                                    <p>
+                                        Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="title">
+                                    ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                                </h5>
+                                <div>
+                                    <p>
+                                        Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="title">
+                                    ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                                </h5>
+                                <div>
+                                    <p>
+                                        Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="title">
+                                    ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                                </h5>
+                                <div>
+                                    <p>
+                                        Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="title">
+                                    ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                                </h5>
+                                <div>
+                                    <p>
+                                        Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="title">
+                                    ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                                </h5>
+                                <div>
+                                    <p>
+                                        Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-area background-blue">
+                    <div class="text">
+                        <h5>ПОМОЖЕМ ПЕРЕВЕЗТИ ЛЮБЫЕ ВЕЩИ БЕЗ ХАОСА</h5>
+                        <p>
+                            рассчитаем цену заранее, приедем, упакуем,
+                            аккуратно перевезем и расставим по местам
+                        </p>
+                    </div>
+                    <div class="form-btn">
+                        <div class="form-group">
+                            <input type="tel" id="tel" placeholder="+38 (_ _ _) _ _ _  _ _  _ _" name="tel" value="">
+                        </div>
+                        <div class="holder-btn">
+                            <a class="btn" href="#sub-modal" rel="modal:open">
+                                <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                            </a>
+                            <p>
+                                Нажимая кнопку «Рассчитать стоимость»,
+                                вы соглашаетесь с правилами
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
+            <section class="container">
+                <div class="side-border">
+                    <span class="border-left"></span>
+                    <span class="border-right"></span>
+                </div>
+                <div class="footer-wrapper">
+                    <div class="logo-social-networks">
+                        <a class="logo-footer" href="#">
+                            <img src="../images/footer-logo.png" alt="logo">
+                        </a>
+                        <h5>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h5>
+                        <ul class="list-social-networks">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="the-lists">
+                        <ul class="contacts-list">
+                            <li class="title">
+                                КОНТАКТЫ
+                            </li>
+                            <li>
+                                <address>
+                                    г. Киев, пр. Московский, 32
+                                    метро Название
+                                </address>
+                            </li>
+                            <li class="mail">
+                                <a href="mailto: mailname@gmail.com">
+                                    mailname@gmail.com
+                                </a>
+                            </li>
+                            <li class="telephone">
+                                <a href="tel:+380981234567">+3(8098)123 45 67</a>
+                            </li>
+                            <li class="schedule">
+                                Звоните нам с 10:00 до 19:00
+                                Без выходных
+                            </li>
+                        </ul>
+                        <ul class="elite-moving">
+                            <li class="title">ELITE MOVING</li>
+                            <li>
+                                <a href="#">Компания</a>
+                            </li>
+                            <li>
+                                <a href="#">Карьера</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="help-and-support">
+                            <li class="title">ПОМОЩЬ И ПОДЕРЖКА</li>
+                            <li class="wrap-list">
+                                <ul class="list-1">
+                                    <li>
+                                        <a href="#">Услуги</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Стоимость</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Способы оплаты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Гарантии</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Страховка</a>
+                                    </li>
+                                </ul>
+                                <ul class="list-2">
+                                    <li>
+                                        <a href="#">О персональных данных</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Конфиденциальность</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Договор-оферы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Карта сайта</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </footer>
+        <div id="sub-modal" class="modal">
+            <a class="close-btn" href="#" rel="modal:close">
+            </a>
+            <div class="modal-content background-blue">
+                <img src="../images/modal-photo.png" alt="photo">
+                <div class="text-form">
+                    <div class="text">
+                        <h3>
+                            ФОРМА ОБРАТНОЙ СВЯЗИ
+                        </h3>
+                        <p>
+                            Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время
+                        </p>
+                    </div>
+                    <form class="contact-form" action="#">
+                        <div class="form-group">
+                            <input type="text" id="Name" placeholder="Введите ваше имя" name="name" value="">
+                        </div>
+                        <div class="form-group-tel">
+                            <input type="tel" id="tel" placeholder="+38 (_ _ _) _ _ _  _ _  _ _" name="tel" value="">
+                        </div>
+                        <div class="form-group-checkbox">
+                            <div class="form-group-2">
+                                <input type="checkbox" id="indeterminate">
+                                <label for="indeterminate">Соглашаюсь с обработкой персональных данных</label>
+                            </div>
+                        </div>
+                        <button class="btn">ВОЙТИ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <!--библиотека для всего, для кнопки меню-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -526,6 +889,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--библиотека для аккордиона-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script>
 
         <!--js accordion-->
