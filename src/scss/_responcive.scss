@@ -352,7 +352,7 @@
 
   .service-guarantee {
     max-width: 100%;
-    padding: 194px 30px;
+    padding: 194px 30px 30px;
   }
 
   .guarantee-wrapper {
@@ -482,11 +482,80 @@
   .modal {
     width: 100% !important;
   }
+}
 
+@media (max-width: 767px) {
+  .container {
+    padding: 0 21px;
+  }
+  .header {
+    padding: 5px 0;
 
+    &:after {
+      top: 49px;
+    }
 
+    &:before {
+      right: 71px;
+      height: 50px;
+    }
+  }
 
+  .logo {
+    img {
+      width: 134px;
+    }
+  }
 
+  .decoration-wrapper {
+    left: 76px;
+
+    .left {
+      width: 88px;
+      height: 67px;
+      margin-right: 4px;
+    }
+
+    .right {
+      width: 5px;
+      height: 67px;
+    }
+  }
+
+  .btn-menu {
+    top: 14px;
+    right: 30px;
+    width: 33px;
+
+    .top {
+      height: 4px;
+    }
+
+    .bottom {
+      height: 2px;
+      top: 9px;
+    }
+  }
+
+  .side-border {
+    .border-right {
+      &:before {
+        right: 0;
+      }
+    }
+  }
+
+  .title-area {
+    .line {
+      &:after {
+        width: 21px;
+      }
+    }
+
+    .right {
+
+    }
+  }
 
 
 

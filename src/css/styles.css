@@ -80,7 +80,7 @@ img {
 
 #wrapper {
   overflow: hidden;
-  position: relative; }
+  min-height: 100vh; }
 
 h1,
 h2,
@@ -190,7 +190,9 @@ h6 {
     z-index: 100; }
 
 .mobile-menu-navigation {
-  font-family: 'Prosto One', cursive; }
+  font-family: 'Prosto One', cursive;
+  overflow: hidden;
+  cursor: auto; }
   .mobile-menu-navigation .languages {
     position: relative; }
     .mobile-menu-navigation .languages:before {
@@ -198,7 +200,7 @@ h6 {
       position: absolute;
       width: 1279px;
       height: 1px;
-      left: 306px;
+      left: -6px;
       top: 97px;
       background: #A0A0A0;
       z-index: 20;
@@ -219,7 +221,8 @@ h6 {
       font-size: 25px;
       line-height: 88px;
       padding: 0 14px;
-      position: relative; }
+      position: relative;
+      color: #fff; }
       .mobile-menu-navigation .languages a:hover {
         color: #488E9A;
         text-decoration: none; }
@@ -235,27 +238,65 @@ h6 {
       position: absolute;
       width: 1px;
       height: 280px;
-      left: 944px;
+      left: 645px;
       bottom: -122px;
       background: #488E9A;
       transform: rotate(-90deg); }
     .mobile-menu-navigation .title:before {
       display: none; }
-  .mobile-menu-navigation li {
+  .mobile-menu-navigation .navigation .active a:after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 1px;
+    left: -159px;
+    top: 22px;
+    background: #FFFFFF;
+    z-index: 10; }
+  .mobile-menu-navigation .navigation .active a:before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: -73px;
+    top: 19px;
+    background: #FFFFFF;
+    z-index: 10;
+    border-radius: 20px; }
+  .mobile-menu-navigation .navigation li {
     position: relative; }
-    .mobile-menu-navigation li a {
+    .mobile-menu-navigation .navigation li a {
       font-size: 45px;
       line-height: 80px;
       color: #fff;
       position: relative; }
-      .mobile-menu-navigation li a:hover {
+      .mobile-menu-navigation .navigation li a:hover {
         text-decoration: none; }
-    .mobile-menu-navigation li:before {
+        .mobile-menu-navigation .navigation li a:hover:after {
+          content: "";
+          position: absolute;
+          width: 90px;
+          height: 1px;
+          left: -168px;
+          top: 26px;
+          background: #FFFFFF;
+          z-index: 10; }
+        .mobile-menu-navigation .navigation li a:hover:before {
+          content: "";
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          left: -82px;
+          top: 23px;
+          background: #FFFFFF;
+          z-index: 10;
+          border-radius: 20px; }
+    .mobile-menu-navigation .navigation li:before {
       content: "";
       position: absolute;
       width: 1px;
       height: 950px;
-      left: 947px;
+      left: 650px;
       top: -396px;
       background: #7C7C7C;
       transform: rotate(-90deg); }
@@ -264,18 +305,22 @@ h6 {
     .mobile-menu-navigation .numbers a {
       font-size: 25px;
       line-height: 88px;
-      padding: 0 25px; }
+      padding: 0 25px;
+      color: #fff; }
   .mobile-menu-navigation .social-networks .list {
     display: flex;
     justify-content: center;
     padding: 36px 0 0; }
     .mobile-menu-navigation .social-networks .list li {
-      margin: 0 11px; }
+      margin: 0 9px; }
       .mobile-menu-navigation .social-networks .list li:before {
         display: none; }
       .mobile-menu-navigation .social-networks .list li a {
         border: 1px solid #717171;
-        padding: 0 13px 5px; }
+        padding: 10px 13px;
+        display: block; }
+        .mobile-menu-navigation .social-networks .list li a img {
+          margin-bottom: -3px; }
         .mobile-menu-navigation .social-networks .list li a i {
           font-size: 33px;
           color: #488E9A; }
@@ -303,8 +348,9 @@ h6 {
     opacity: 0.8; }
 
 .side-border {
+  display: block;
   position: relative; }
-  .side-border .border-left:after {
+  .side-border:after {
     content: "";
     position: absolute;
     width: 1px;
@@ -313,7 +359,7 @@ h6 {
     top: 0;
     background: #EBEBEB;
     z-index: 1; }
-  .side-border .border-right:before {
+  .side-border:before {
     content: "";
     position: absolute;
     width: 1px;
@@ -326,7 +372,8 @@ h6 {
 .banner {
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
-  min-height: 897px;
+  background-size: 100%;
+  min-height: 100vh;
   position: relative;
   margin-top: -99px; }
   .banner:after {
@@ -338,10 +385,10 @@ h6 {
     left: 0;
     background: #484848;
     opacity: 0.8; }
-  .banner .side-border .border-left:after {
+  .banner .side-border:after {
     background: #A0A0A0;
     z-index: 100; }
-  .banner .side-border .border-right:before {
+  .banner .side-border:before {
     background: #A0A0A0;
     z-index: 100; }
 
@@ -387,8 +434,21 @@ h6 {
 
 .title-area {
   position: relative;
-  margin-bottom: 242px; }
-  .title-area .line:after {
+  margin-bottom: 242px;
+  font-family: 'Prosto One', cursive;
+  padding-top: 360px;
+  font-weight: 400;
+  color: #fff; }
+  .title-area h5 {
+    margin-bottom: 4px;
+    font-size: 38px;
+    line-height: 40px;
+    letter-spacing: 2px; }
+  .title-area h6 {
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 2px; }
+  .title-area:after {
     content: "";
     position: absolute;
     width: 90px;
@@ -397,7 +457,7 @@ h6 {
     top: 378px;
     background: #FFFFFF;
     z-index: 10; }
-  .title-area .point:before {
+  .title-area:before {
     content: "";
     position: absolute;
     width: 7px;
@@ -407,20 +467,6 @@ h6 {
     background: #FFFFFF;
     z-index: 10;
     border-radius: 20px; }
-  .title-area .title {
-    font-family: 'Prosto One', cursive;
-    padding-top: 360px;
-    font-weight: 400;
-    color: #fff; }
-    .title-area .title h5 {
-      margin-bottom: 4px;
-      font-size: 38px;
-      line-height: 40px;
-      letter-spacing: 2px; }
-    .title-area .title h6 {
-      font-size: 32px;
-      line-height: 44px;
-      letter-spacing: 2px; }
 
 .form-wrapper {
   margin-bottom: 164px; }
@@ -490,30 +536,57 @@ h6 {
 
 .guarantee {
   display: flex;
-  position: relative;
   margin: 0 -7px; }
-  .guarantee .title-area {
-    position: relative;
-    margin-bottom: 242px; }
-    .guarantee .title-area .line:after {
-      background: #161616; }
-    .guarantee .title-area .point:before {
-      background: #161616; }
-    .guarantee .title-area .title {
-      color: #161616; }
-      .guarantee .title-area .title h5 {
-        font-size: 35px;
-        letter-spacing: 0;
-        line-height: 37px; }
-      .guarantee .title-area .title h6 {
-        font-size: 35px;
-        line-height: 44px;
-        letter-spacing: 0; }
 
-.position-wrap {
-  position: absolute;
-  top: -287px;
-  left: 433px; }
+.title-area-service-guarantee {
+  padding: 197px 0 0;
+  position: relative; }
+  .title-area-service-guarantee .title-area {
+    position: absolute;
+    top: 13%;
+    left: -14%;
+    margin-bottom: 0;
+    color: #161616;
+    padding-top: 0; }
+    .title-area-service-guarantee .title-area:after {
+      left: -99px;
+      top: 16px;
+      background: #161616; }
+    .title-area-service-guarantee .title-area:before {
+      left: -13px;
+      top: 13px;
+      background: #161616; }
+    .title-area-service-guarantee .title-area h5 {
+      font-size: 35px;
+      letter-spacing: 0;
+      line-height: 37px; }
+    .title-area-service-guarantee .title-area h6 {
+      font-size: 35px;
+      line-height: 44px;
+      letter-spacing: 0; }
+
+.service-guarantee {
+  max-width: 718px;
+  padding-left: 101px; }
+  .service-guarantee li {
+    display: flex;
+    margin-bottom: 26px; }
+    .service-guarantee li strong {
+      font-size: 30px;
+      line-height: 37px;
+      color: #55B197;
+      margin-right: 28px; }
+    .service-guarantee li div {
+      position: relative;
+      padding: 14px 0 0; }
+      .service-guarantee li div:after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 51px;
+        height: 1px;
+        background: #161616; }
 
 .title-wrap-position {
   display: flex;
@@ -579,30 +652,6 @@ h6 {
     background: transparent;
     z-index: -1; }
 
-.service-guarantee {
-  max-width: 718px;
-  padding-top: 197px;
-  padding-left: 101px; }
-  .service-guarantee li {
-    display: flex;
-    margin-bottom: 26px; }
-    .service-guarantee li strong {
-      font-size: 30px;
-      line-height: 37px;
-      color: #55B197;
-      margin-right: 28px; }
-    .service-guarantee li div {
-      position: relative;
-      padding: 14px 0 0; }
-      .service-guarantee li div:after {
-        content: "";
-        position: absolute;
-        top: 7px;
-        left: 0;
-        width: 51px;
-        height: 1px;
-        background: #161616; }
-
 .service-wrapper {
   margin-bottom: 160px;
   position: relative; }
@@ -614,28 +663,27 @@ h6 {
     display: flex;
     justify-content: space-between; }
     .service-wrapper .holder-title .title-area {
-      margin-bottom: 0; }
-      .service-wrapper .holder-title .title-area .line:after {
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-left: 100px;
+      color: #161616; }
+      .service-wrapper .holder-title .title-area h5 {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0;
+        margin-bottom: 0; }
+      .service-wrapper .holder-title .title-area h6 {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0; }
+      .service-wrapper .holder-title .title-area:after {
         left: -7px;
         top: 20px;
         background: #161616; }
-      .service-wrapper .holder-title .title-area .point:before {
+      .service-wrapper .holder-title .title-area:before {
         left: 80px;
         top: 17px;
         background: #161616; }
-      .service-wrapper .holder-title .title-area .title {
-        padding-top: 0;
-        padding-left: 100px;
-        color: #161616; }
-        .service-wrapper .holder-title .title-area .title h5 {
-          font-size: 35px;
-          line-height: 44px;
-          letter-spacing: 0;
-          margin-bottom: 0; }
-        .service-wrapper .holder-title .title-area .title h6 {
-          font-size: 35px;
-          line-height: 44px;
-          letter-spacing: 0; }
     .service-wrapper .holder-title .title-wrap-position {
       margin-bottom: 0; }
       .service-wrapper .holder-title .title-wrap-position .title-wrap .title-line {
@@ -710,24 +758,23 @@ h6 {
     justify-content: space-between;
     margin-bottom: 33px; }
     .comfort-wrapper .holder-title .title-area {
+      padding-top: 0;
+      font-weight: 400;
+      color: #161616;
+      padding-left: 99px;
       margin-bottom: 0; }
-      .comfort-wrapper .holder-title .title-area .line:after {
+      .comfort-wrapper .holder-title .title-area h5 {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0; }
+      .comfort-wrapper .holder-title .title-area:after {
         left: -6px;
         top: 20px;
         background: #161616; }
-      .comfort-wrapper .holder-title .title-area .point:before {
+      .comfort-wrapper .holder-title .title-area:before {
         left: 80px;
         top: 17px;
         background: #161616; }
-      .comfort-wrapper .holder-title .title-area .title {
-        padding-top: 0;
-        font-weight: 400;
-        color: #161616;
-        padding-left: 99px; }
-        .comfort-wrapper .holder-title .title-area .title h5 {
-          font-size: 35px;
-          line-height: 44px;
-          letter-spacing: 0; }
     .comfort-wrapper .holder-title .title-wrap-position {
       margin-bottom: 0; }
       .comfort-wrapper .holder-title .title-wrap-position .title-wrap .title-line {
@@ -797,24 +844,23 @@ h6 {
     justify-content: space-between;
     margin-bottom: 36px; }
     .reviews-wrapper .holder-title .title-area {
-      margin-bottom: 0; }
-      .reviews-wrapper .holder-title .title-area .line:after {
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-left: 100px;
+      color: #161616; }
+      .reviews-wrapper .holder-title .title-area h5 {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0;
+        margin-bottom: 0; }
+      .reviews-wrapper .holder-title .title-area:after {
         left: -7px;
         top: 20px;
         background: #161616; }
-      .reviews-wrapper .holder-title .title-area .point:before {
+      .reviews-wrapper .holder-title .title-area:before {
         left: 80px;
         top: 17px;
         background: #161616; }
-      .reviews-wrapper .holder-title .title-area .title {
-        padding-top: 0;
-        padding-left: 100px;
-        color: #161616; }
-        .reviews-wrapper .holder-title .title-area .title h5 {
-          font-size: 35px;
-          line-height: 44px;
-          letter-spacing: 0;
-          margin-bottom: 0; }
     .reviews-wrapper .holder-title .title-wrap-position {
       margin-bottom: 0; }
       .reviews-wrapper .holder-title .title-wrap-position .title-wrap .title-line {
@@ -832,24 +878,23 @@ h6 {
     justify-content: space-between;
     margin-bottom: 4px; }
     .the-cost .holder-title .title-area {
-      margin-bottom: 0; }
-      .the-cost .holder-title .title-area .line:after {
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-left: 100px;
+      color: #161616; }
+      .the-cost .holder-title .title-area h5 {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0;
+        margin-bottom: -1px; }
+      .the-cost .holder-title .title-area:after {
         left: -7px;
         top: 20px;
         background: #161616; }
-      .the-cost .holder-title .title-area .point:before {
+      .the-cost .holder-title .title-area:before {
         left: 80px;
         top: 17px;
         background: #161616; }
-      .the-cost .holder-title .title-area .title {
-        padding-top: 0;
-        padding-left: 100px;
-        color: #161616; }
-        .the-cost .holder-title .title-area .title h5 {
-          font-size: 35px;
-          line-height: 44px;
-          letter-spacing: 0;
-          margin-bottom: -1px; }
     .the-cost .holder-title .title-wrap-position {
       margin-bottom: 0; }
       .the-cost .holder-title .title-wrap-position .title-wrap .title-line {
@@ -922,12 +967,12 @@ h6 {
         background-repeat: no-repeat; }
       .the-cost-wrapper .col-1 li .title-area {
         margin-bottom: 0; }
-        .the-cost-wrapper .col-1 li .title-area .line:after {
+        .the-cost-wrapper .col-1 li .title-area:after {
           left: -10px;
           top: 16px;
           width: 610px;
           background: #161616; }
-        .the-cost-wrapper .col-1 li .title-area .point:before {
+        .the-cost-wrapper .col-1 li .title-area:before {
           left: 596px;
           top: 13px;
           background: #161616; }
@@ -981,25 +1026,24 @@ h6 {
     justify-content: space-between;
     margin-bottom: 4px; }
     .staff-background .holder-title .title-area {
-      margin-bottom: 0; }
-      .staff-background .holder-title .title-area .line:after {
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-left: 100px;
+      color: #fff; }
+      .staff-background .holder-title .title-area h5 {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0;
+        margin-bottom: -1px;
+        color: #fff; }
+      .staff-background .holder-title .title-area:after {
         left: -7px;
         top: 20px;
         background: #fff; }
-      .staff-background .holder-title .title-area .point:before {
+      .staff-background .holder-title .title-area:before {
         left: 80px;
         top: 17px;
         background: #fff; }
-      .staff-background .holder-title .title-area .title {
-        padding-top: 0;
-        padding-left: 100px;
-        color: #fff; }
-        .staff-background .holder-title .title-area .title h5 {
-          font-size: 35px;
-          line-height: 44px;
-          letter-spacing: 0;
-          margin-bottom: -1px;
-          color: #fff; }
     .staff-background .holder-title .title-wrap-position {
       z-index: 20;
       margin-bottom: 0; }
@@ -1143,24 +1187,23 @@ h6 {
     justify-content: space-between;
     margin-bottom: 36px; }
     .our-everyday-life .holder-title .title-area {
-      margin-bottom: 0; }
-      .our-everyday-life .holder-title .title-area .line:after {
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-left: 100px;
+      color: #161616; }
+      .our-everyday-life .holder-title .title-area h5 {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0;
+        margin-bottom: 0; }
+      .our-everyday-life .holder-title .title-area:after {
         left: -7px;
         top: 20px;
         background: #161616; }
-      .our-everyday-life .holder-title .title-area .point:before {
+      .our-everyday-life .holder-title .title-area:before {
         left: 80px;
         top: 17px;
         background: #161616; }
-      .our-everyday-life .holder-title .title-area .title {
-        padding-top: 0;
-        padding-left: 100px;
-        color: #161616; }
-        .our-everyday-life .holder-title .title-area .title h5 {
-          font-size: 35px;
-          line-height: 44px;
-          letter-spacing: 0;
-          margin-bottom: 0; }
     .our-everyday-life .holder-title .title-wrap-position {
       margin-bottom: 0; }
       .our-everyday-life .holder-title .title-wrap-position .title-wrap .title-line {
@@ -1212,28 +1255,27 @@ h6 {
     display: flex;
     justify-content: space-between; }
     .wrapper-question-answer .holder-title .title-area {
-      margin-bottom: 0; }
-      .wrapper-question-answer .holder-title .title-area .line:after {
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-left: 100px;
+      color: #161616; }
+      .wrapper-question-answer .holder-title .title-area h5 {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0;
+        margin-bottom: 0; }
+      .wrapper-question-answer .holder-title .title-area h6 {
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0; }
+      .wrapper-question-answer .holder-title .title-area:after {
         left: -7px;
         top: 20px;
         background: #161616; }
-      .wrapper-question-answer .holder-title .title-area .point:before {
+      .wrapper-question-answer .holder-title .title-area:before {
         left: 80px;
         top: 17px;
         background: #161616; }
-      .wrapper-question-answer .holder-title .title-area .title {
-        padding-top: 0;
-        padding-left: 100px;
-        color: #161616; }
-        .wrapper-question-answer .holder-title .title-area .title h5 {
-          font-size: 35px;
-          line-height: 44px;
-          letter-spacing: 0;
-          margin-bottom: 0; }
-        .wrapper-question-answer .holder-title .title-area .title h6 {
-          font-size: 35px;
-          line-height: 44px;
-          letter-spacing: 0; }
     .wrapper-question-answer .holder-title .title-wrap-position {
       margin-bottom: 0; }
       .wrapper-question-answer .holder-title .title-wrap-position .title-wrap .title-line {
@@ -1335,9 +1377,9 @@ h6 {
     left: 0;
     background: #3D3D3D;
     opacity: 0.9; }
-  .footer .side-border .border-left:after {
+  .footer .side-border:after {
     top: -252px; }
-  .footer .side-border .border-right:before {
+  .footer .side-border:before {
     top: -252px; }
   .footer .footer-wrapper {
     display: flex;
@@ -1725,7 +1767,7 @@ h6 {
         left: 222px; }
   .service-guarantee {
     max-width: 100%;
-    padding: 194px 30px; }
+    padding: 194px 30px 30px; }
   .guarantee-wrapper {
     margin-bottom: 20px; }
     .guarantee-wrapper .title-wrap-position {
@@ -1782,3 +1824,38 @@ h6 {
       margin-right: 4px; }
   .modal {
     width: 100% !important; } }
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 21px; }
+  .header {
+    padding: 5px 0; }
+    .header:after {
+      top: 49px; }
+    .header:before {
+      right: 71px;
+      height: 50px; }
+  .logo img {
+    width: 134px; }
+  .decoration-wrapper {
+    left: 76px; }
+    .decoration-wrapper .left {
+      width: 88px;
+      height: 67px;
+      margin-right: 4px; }
+    .decoration-wrapper .right {
+      width: 5px;
+      height: 67px; }
+  .btn-menu {
+    top: 14px;
+    right: 30px;
+    width: 33px; }
+    .btn-menu .top {
+      height: 4px; }
+    .btn-menu .bottom {
+      height: 2px;
+      top: 9px; }
+  .side-border .border-right:before {
+    right: 0; }
+  .title-area .line:after {
+    width: 21px; } }
