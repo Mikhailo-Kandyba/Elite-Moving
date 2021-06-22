@@ -27,7 +27,7 @@
     }
   }
 
-  .form-area {
+    .form-area {
     padding: 48px 28px 36px 43px;
     max-width: 968px;
   }
@@ -164,10 +164,12 @@
   }
 
   .seal-text {
-    margin-top: -78px;
+    margin-top: 202px;
+    margin-right: 8px;
 
     .seal {
-      top: -268px;
+      top: -225px;
+      left: 7%;
     }
   }
 
@@ -237,19 +239,261 @@
   .modal {
     width: 74% !important;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+@media (max-width: 1023px) {
+  .mobile-menu-navigation {
+    .title {
+      &:after {
+        left: 392px;
+      }
+    }
+
+    li {
+      &:before {
+        height: 634px;
+        left: 386px;
+        top: -246px;
+      }
+    }
+
+    .numbers {
+      display: flex;
+      flex-direction: column;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .mobile-menu-navigation {
+    :nth-child(8) {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .banner {
+    margin-top: -270px;
+    min-height: 717px;
+
+    .side-border {
+      .border-left {
+        &:after {
+          height: 717px;
+        }
+      }
+
+      .border-right {
+        &:before {
+          height: 717px;
+        }
+      }
+    }
+  }
+
+  .side-border {
+    .border-left {
+      &:after {
+        height: 1400px;
+      }
+    }
+
+    .border-right {
+      &:before {
+        height: 1400px;
+      }
+    }
+  }
+
+  .title-area {
+    margin-bottom: 100px;
+  }
+
+  .form-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 21px 5px;
+    max-width: 655px;
+
+    .text {
+      margin-right: 0;
+    }
+  }
+
+  .guarantee {
+    flex-direction: column;
+
+    .title-wrap-position {
+      margin-bottom: 25px;
+    }
+
+    .position-wrap {
+      top: 263px;
+      left: 183px;
+    }
+
+    .img-area {
+      margin-bottom: 25px;
+      .decor-border {
+        bottom: -24px;
+        left: 37px;
+      }
+
+      .decor-point {
+        bottom: -30px;
+        left: 222px;
+      }
+    }
+  }
+
+  .service-guarantee {
+    max-width: 100%;
+    padding: 194px 30px;
+  }
+
+  .guarantee-wrapper {
+    margin-bottom: 20px;
+
+    .title-wrap-position {
+      margin-bottom: 24px;
+    }
+  }
+
+  .list-service {
+    li {
+      .service-photo {
+        span {
+          font-size: 173px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    padding: 15px;
+  }
+
+  .comfort-text {
+    .weight-400 {
+      max-width: 399px;
+      padding-right: 18px;
+    }
+  }
+
+  .full-construction {
+    background-position: inherit;
+    margin-bottom: 50px;
+  }
+
+  .title-wrap {
+    .title-line {
+      width: 82px;
+    }
+  }
+
+  .the-cost-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    .col-1 {
+      margin-bottom: 60px;
+    }
+  }
+
+  .staff-wrapper {
+    position: relative;
+    .wrap-slid-list {
+      flex-direction: column;
+      align-items: center;
+      .service-guarantee {
+        max-width: 100%;
+        padding: 0 30px 0;
+      }
+    }
+  }
+
+  .staff-background {
+    min-height: 1350px;
+    background-size: 1100px 1410px;
+  }
+
+  .photos-of-employees-seal-text {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .our-everyday-life {
+    .holder-title {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .wrap-list {
+    .list-weekdays {
+      .list-item {
+        margin: 4px;
+      }
+    }
+  }
+
+  .wrapper-question-answer {
+    .holder-title {
+      flex-direction: column-reverse;
+    }
+
+    .subtitle {
+      .title-service {
+        padding: 0 0 0 100px;
+      }
+    }
+  }
+
+  .footer {
+    min-height: 288px;
+    .logo-social-networks {
+      margin-right: 7px;
+      margin-left: -12px;
+    }
+    .the-lists {
+      .contacts-list {
+        &:after {
+          right: 1px;
+        }
+      }
+      .help-and-support {
+        .wrap-list {
+          .list-1 {
+            margin-right: 11px;
+          }
+
+          .list-2 {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .modal {
+    width: 100% !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
