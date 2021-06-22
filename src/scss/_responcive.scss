@@ -42,6 +42,7 @@
 
   .service-guarantee {
     max-width: 608px;
+    padding: 0 20px;
   }
 
   .guarantee {
@@ -49,6 +50,7 @@
   }
 
   .img-area {
+    height: 480px;
     .decor-point {
       bottom: -60px;
       left: 110px;
@@ -98,7 +100,7 @@
 
   .comfort-text {
     .weight-600 {
-      padding-right: 20px;
+      padding-right: 25px;
     }
   }
 
@@ -113,6 +115,7 @@
 
   .col-2 {
     .img-area {
+      height: 325px;
       max-width: 500px;
 
       .text {
@@ -130,7 +133,7 @@
   }
 
   .the-cost {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .staff-wrapper {
@@ -175,7 +178,6 @@
 
   .staff-background {
     padding-top: 35px;
-    background-size: 1100px 860px;
     margin-bottom: 80px;
   }
 
@@ -275,9 +277,6 @@
   }
 
   .banner {
-    margin-top: -270px;
-    min-height: 717px;
-
     .side-border {
       .border-left {
         &:after {
@@ -293,7 +292,11 @@
     }
   }
 
-  .side-border {
+  .banner-content {
+    margin-bottom: 120px;
+  }
+
+    .side-border {
     .border-left {
       &:after {
         height: 1400px;
@@ -337,7 +340,9 @@
     }
 
     .img-area {
+      height: 540px;
       margin-bottom: 25px;
+
       .decor-border {
         bottom: -24px;
         left: 37px;
@@ -350,9 +355,17 @@
     }
   }
 
-  .service-guarantee {
+  .title-area-service-guarantee {
+    width: 100%;
+
+    .title-area {
+      margin-left: 98px;
+      width: 100%;
+    }
+  }
+
+    .service-guarantee {
     max-width: 100%;
-    padding: 194px 30px 30px;
   }
 
   .guarantee-wrapper {
@@ -402,6 +415,13 @@
     .col-1 {
       margin-bottom: 60px;
     }
+
+    .col-2 {
+      .img-area {
+        height: 338px;
+        margin-bottom: 54px;
+      }
+    }
   }
 
   .staff-wrapper {
@@ -428,12 +448,39 @@
   }
 
   .our-everyday-life {
+    .reviews-text {
+      margin-left: 0;
+    }
+
     .holder-title {
       flex-direction: column-reverse;
     }
   }
 
-  .wrap-list {
+  .reviews-wrapper {
+    .reviews-text {
+      margin-left: 0;
+    }
+    .holder-title {
+      .title-area {
+        h5 {
+          width: 360px;
+        }
+      }
+    }
+  }
+
+  .the-cost {
+    .holder-title {
+      .title-area {
+        h5 {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+
+    .wrap-list {
     .list-weekdays {
       .list-item {
         margin: 4px;
@@ -485,77 +532,197 @@
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 0 21px;
-  }
-  .header {
-    padding: 5px 0;
+.container {
+  padding: 0 14px;
+}
+.header {
+  padding: 5px 0;
+}
 
-    &:after {
-      top: 49px;
+.header-wrapper {
+  &:after {
+    top: 44px;
+    right: 6px;
+  }
+
+  &:before {
+    height: 64px;
+    right: 68px;
+  }
+}
+
+.side-border {
+  &:after {
+    left: 14px;
+  }
+
+  &:before {
+    right: 18px;
+  }
+}
+
+.logo {
+  margin-left: 6px;
+  img {
+    width: 134px;
+  }
+}
+
+.decoration-wrapper {
+  left: 76px;
+
+  .left {
+    width: 90px;
+    height: 67px;
+    margin-right: 4px;
+  }
+
+  .right {
+    width: 5px;
+    height: 67px;
+  }
+}
+
+.btn-menu {
+  top: 13px;
+  right: 27px;
+  width: 33px;
+
+  .top {
+    height: 4px;
+  }
+
+  .bottom {
+    height: 2px;
+    top: 9px;
+  }
+}
+
+.side-border {
+  .border-right {
+    &:before {
+      right: 0;
     }
+  }
+}
+
+.title-area {
+  margin-top: 214px;
+  margin-bottom: 183px;
+
+  h5 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 0;
 
     &:before {
-      right: 71px;
-      height: 50px;
+      width: 6px;
+      height: 6px;
+      left: -11px;
+      top: 8px;
+    }
+
+    &:after {
+      width: 18px;
+      height: 1px;
+      left: -29px;
+      top: 10px;
     }
   }
 
-  .logo {
-    img {
-      width: 134px;
+  h6 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .line {
+    &:after {
+      width: 21px;
+    }
+  }
+}
+
+.banner-content {
+  padding-left: 29px;
+
+  .video-button {
+    span {
+      font-size: 15px;
+      line-height: 19px;
+    }
+
+    &:after {
+      top: 27px;
+      width: 204px;
+    }
+  }
+}
+
+.form-area {
+  margin-left: -12px;
+  margin-top: -93px;
+  max-width: 275px;
+  z-index: 104;
+  padding: 36px 6px 33px;
+  .text {
+    h5 {
+      font-size: 17px;
+      line-height: 18px;
+      margin-bottom: 11px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.form-btn {
+  margin-top: 13px;
+
+  .form-group {
+    margin-bottom: 17px;
+
+    input {
+      font-size: 12px;
+      line-height: 15px;
+      padding: 15px 3px 8px 17px;
+      width: 217px;
+      height: 33px;
     }
   }
 
-  .decoration-wrapper {
-    left: 76px;
-
-    .left {
-      width: 88px;
-      height: 67px;
-      margin-right: 4px;
+  .holder-btn {
+    .btn {
+      font-size: 10px;
+      padding: 16px 16px 12px;
+      margin: 0 23px 6px;
     }
 
-    .right {
-      width: 5px;
-      height: 67px;
+    p {
+      font-size: 12px;
+      line-height: 15px;
     }
   }
+}
 
-  .btn-menu {
-    top: 14px;
-    right: 30px;
-    width: 33px;
+.form-wrapper {
+  margin-bottom: 77px;
+}
 
-    .top {
-      height: 4px;
-    }
-
-    .bottom {
-      height: 2px;
-      top: 9px;
-    }
+.title-wrap {
+  .title {
+    font-size: 15px;
+    line-height: 19px;
   }
 
-  .side-border {
-    .border-right {
-      &:before {
-        right: 0;
-      }
-    }
+  .title-number {
+    margin-left: 4px;
   }
+}
 
-  .title-area {
-    .line {
-      &:after {
-        width: 21px;
-      }
-    }
 
-    .right {
 
-    }
-  }
 
 
 

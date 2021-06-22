@@ -882,7 +882,7 @@
 
 .full-construction {
   background-image: url("../images/full-construction.png");
-  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   min-height: 266px;
   position: relative;
@@ -981,7 +981,7 @@
 }
 
 .the-cost {
-  margin-bottom: 26px;
+  margin-bottom: 208px;
 
   .holder-title {
     display: flex;
@@ -1134,12 +1134,6 @@
         }
       }
     }
-  }
-}
-
-.the-cost-list :nth-child(9) {
-  &:after {
-    display: none;
   }
 }
 
