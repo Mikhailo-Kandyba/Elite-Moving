@@ -1,27 +1,9 @@
 .header {
   padding: 20px 0;
-  position: relative;
-
-  &:after {
-    content: "";
-    position: absolute;
-    width: 1585px;
-    height: 1px;
-    left: 0;
-    top: 97px;
-    background: #A0A0A0;
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 98px;
-    right: 448px;
-    top: 0;
-    background: #A0A0A0;
-    z-index: 100;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .mobile-menu-navigation {
@@ -224,6 +206,27 @@
 
 .header-wrapper {
   position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 5000px;
+    height: 1px;
+    right: 22px;
+    top: 78px;
+    background: #A0A0A0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 98px;
+    right: 152px;
+    top: -20px;
+    background: #A0A0A0;
+    z-index: 100;
+  }
 }
 
 .decoration-wrapper {
@@ -248,41 +251,23 @@
   }
 }
 
-.side-border {
-  display: block;
-  position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      width: 1px;
-      height: 900px;
-      left: -7px;
-      top: 0;
-      background: #EBEBEB;
-      z-index: 1;
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 1px;
-      height: 900px;
-      right: 7px;
-      top: 0;
-      background: #EBEBEB;
-      z-index: 1;
-    }
-}
-
-
 .banner {
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   min-height: 100vh;
   position: relative;
-  margin-top: -99px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+  }
 
   &:after {
     content: "";
@@ -308,7 +293,7 @@
   }
 }
 
-.title-btn-wrapper {
+.banner-content {
   margin-bottom: 80px;
   padding-left: 99px;
   position: relative;
@@ -361,47 +346,48 @@
 }
 
 .title-area {
-  position: relative;
-  margin-bottom: 242px;
   font-family: 'Prosto One', cursive;
-  padding-top: 360px;
   font-weight: 400;
   color: #fff;
+  margin-top: 220px;
+  margin-bottom: 243px;
+
 
   h5 {
     margin-bottom: 4px;
     font-size: 38px;
     line-height: 40px;
     letter-spacing: 2px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 90px;
+      height: 1px;
+      left: -106px;
+      top: 18px;
+      background: #FFFFFF;
+      z-index: 10;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      left: -19px;
+      top: 15px;
+      background: #FFFFFF;
+      z-index: 10;
+      border-radius: 20px;
+    }
   }
 
   h6 {
     font-size: 32px;
     line-height: 44px;
     letter-spacing: 2px;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    width: 90px;
-    height: 1px;
-    left: -106px;
-    top: 378px;
-    background: #FFFFFF;
-    z-index: 10;
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    left: -19px;
-    top: 375px;
-    background: #FFFFFF;
-    z-index: 10;
-    border-radius: 20px;
   }
 }
 
@@ -496,38 +482,38 @@
 
 .guarantee {
   display: flex;
-  margin: 0 -7px;
+  margin: 0 -5px;
 }
 
 .title-area-service-guarantee {
-  padding: 197px 0 0;
+  padding: 50px 0 0;
   position: relative;
+  width: 58%;
 
   .title-area {
-    position: absolute;
-    top: 13%;
-    left: -14%;
-    margin-bottom: 0;
+    margin-left: -99px;
+    margin-bottom: 39px;
     color: #161616;
     padding-top: 0;
-
-    &:after {
-      left: -99px;
-      top: 16px;
-      background: #161616;
-    }
-
-    &:before {
-      left: -13px;
-      top: 13px;
-      background: #161616;
-    }
-
+    margin-top: 23px;
 
     h5 {
+      position: relative;
       font-size: 35px;
       letter-spacing: 0;
       line-height: 37px;
+
+      &:after {
+        left: -99px;
+        top: 16px;
+        background: #161616;
+      }
+
+      &:before {
+        left: -13px;
+        top: 13px;
+        background: #161616;
+      }
     }
 
     h6 {
@@ -540,7 +526,7 @@
 
 .service-guarantee {
   max-width: 718px;
-  padding-left: 101px;
+  padding-left: 99px;
 
   li {
     display: flex;
@@ -618,6 +604,7 @@
 
 .img-area {
   position: relative;
+  height: 580px;
 
   .background {
     position: relative;
@@ -674,30 +661,31 @@
       padding-top: 0;
       padding-left: 100px;
       color: #161616;
+      margin-top: 0;
 
       h5 {
         font-size: 35px;
         line-height: 44px;
         letter-spacing: 0;
         margin-bottom: 0;
+
+        &:after {
+          left: -107px;
+          top: 20px;
+          background: #161616;
+        }
+
+        &:before {
+          left: -19px;
+          top: 17px;
+          background: #161616;
+        }
       }
 
       h6 {
         font-size: 35px;
         line-height: 44px;
         letter-spacing: 0;
-      }
-
-      &:after {
-        left: -7px;
-        top: 20px;
-        background: #161616;
-      }
-
-      &:before {
-        left: 80px;
-        top: 17px;
-        background: #161616;
       }
     }
 
@@ -824,23 +812,24 @@
       color: #161616;
       padding-left: 99px;
       margin-bottom: 0;
+      margin-top: 0;
 
       h5 {
         font-size: 35px;
         line-height: 44px;
         letter-spacing: 0;
-      }
 
-      &:after {
-        left: -6px;
-        top: 20px;
-        background: #161616;
-      }
+        &:after {
+          left: -104px;
+          top: 19px;
+          background: #161616;
+        }
 
-      &:before {
-        left: 80px;
-        top: 17px;
-        background: #161616;
+        &:before {
+          left: -18px;
+          top: 17px;
+          background: #161616;
+        }
       }
     }
 
@@ -869,10 +858,11 @@
     font-weight: 600;
     line-height: 22px;
     padding-right: 140px;
+    width: 52%;
   }
 
   .weight-400 {
-    max-width: 620px;
+    width: 48%;
     font-weight: 400;
     padding-right: 15px;
     position: relative;
@@ -881,7 +871,7 @@
       content: "";
       position: absolute;
       top: 3px;
-      left: -24px;
+      left: -21px;
       width: 1px;
       height: 91px;
       background: #161616;
@@ -945,24 +935,27 @@
       padding-top: 0;
       padding-left: 100px;
       color: #161616;
+      margin-top: 0;
 
       h5 {
         font-size: 35px;
         line-height: 44px;
         letter-spacing: 0;
         margin-bottom: 0;
-      }
+        width: 500px;
+        word-wrap: break-word;
 
-      &:after {
-        left: -7px;
-        top: 20px;
-        background: #161616;
-      }
+        &:after {
+          left: -105px;
+          top: 19px;
+          background: #161616;
+        }
 
-      &:before {
-        left: 80px;
-        top: 17px;
-        background: #161616;
+        &:before {
+          left: -19px;
+          top: 16px;
+          background: #161616;
+        }
       }
     }
 
@@ -988,7 +981,7 @@
 }
 
 .the-cost {
-  margin-bottom: 206px;
+  margin-bottom: 26px;
 
   .holder-title {
     display: flex;
@@ -1000,24 +993,25 @@
       padding-top: 0;
       padding-left: 100px;
       color: #161616;
+      margin-top: 0;
 
       h5 {
         font-size: 35px;
         line-height: 44px;
         letter-spacing: 0;
         margin-bottom: -1px;
-      }
 
-      &:after {
-        left: -7px;
-        top: 20px;
-        background: #161616;
-      }
+        &:after {
+          left: -105px;
+          top: 18px;
+          background: #161616;
+        }
 
-      &:before {
-        left: 80px;
-        top: 17px;
-        background: #161616;
+        &:before {
+          left: -19px;
+          top: 15px;
+          background: #161616;
+        }
       }
     }
 
@@ -1154,6 +1148,8 @@
     margin-top: -15px;
     margin-right: 14px;
     z-index: 20;
+    height: 425px;
+
     .decor-point {
       bottom: -36px;
       left: 68px;
@@ -1185,6 +1181,7 @@
 .staff-background {
   background-image: url("../images/staff-background.png");
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 759px;
   position: relative;
   padding-top: 81px;
@@ -1211,6 +1208,7 @@
       padding-top: 0;
       padding-left: 100px;
       color: #fff;
+      margin-top: 0;
 
       h5 {
         font-size: 35px;
@@ -1218,18 +1216,18 @@
         letter-spacing: 0;
         margin-bottom: -1px;
         color: #fff;
-      }
 
-      &:after {
-        left: -7px;
-        top: 20px;
-        background: #fff;
-      }
+        &:after {
+          left: -107px;
+          top: 20px;
+          background: #fff;
+        }
 
-      &:before {
-        left: 80px;
-        top: 17px;
-        background: #fff;
+        &:before {
+          left: -18px;
+          top: 17px;
+          background: #fff;
+        }
       }
     }
 
@@ -1448,24 +1446,26 @@
       padding-top: 0;
       padding-left: 100px;
       color: #161616;
+      margin-top: 0;
+      max-width: 870px;
 
       h5 {
         font-size: 35px;
         line-height: 44px;
         letter-spacing: 0;
         margin-bottom: 0;
-      }
 
-      &:after {
-        left: -7px;
-        top: 20px;
-        background: #161616;
-      }
+        &:after {
+          left: -106px;
+          top: 20px;
+          background: #161616;
+        }
 
-      &:before {
-        left: 80px;
-        top: 17px;
-        background: #161616;
+        &:before {
+          left: -20px;
+          top: 16px;
+          background: #161616;
+        }
       }
     }
     .title-wrap-position {
@@ -1549,30 +1549,31 @@
       padding-top: 0;
       padding-left: 100px;
       color: #161616;
+      margin-top: 0;
 
       h5 {
         font-size: 35px;
         line-height: 44px;
         letter-spacing: 0;
         margin-bottom: 0;
+
+        &:after {
+          left: -106px;
+          top: 21px;
+          background: #161616;
+        }
+
+        &:before {
+          left: -20px;
+          top: 19px;
+          background: #161616;
+        }
       }
 
       h6 {
         font-size: 35px;
         line-height: 44px;
         letter-spacing: 0;
-      }
-
-      &:after {
-        left: -7px;
-        top: 20px;
-        background: #161616;
-      }
-
-      &:before {
-        left: 80px;
-        top: 17px;
-        background: #161616;
       }
     }
 
@@ -1681,7 +1682,8 @@
     }
 
     .ui-accordion-content {
-      height: 82px;
+      min-height: 82px!important;
+      height: auto!important;
     }
 
     .ui-accordion-header-active {

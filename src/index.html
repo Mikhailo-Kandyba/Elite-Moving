@@ -113,9 +113,8 @@
         </header>
         <main>
             <div class="banner">
-                <section class="container">
-                    <span class="side-border"></span>
-                    <div class="title-btn-wrapper">
+                <section class="container side-border">
+                    <div class="banner-content">
                         <div class="title-area z-index">
                             <h5>БЕЗОПАСНЫЕ ПЕРЕЕЗДЫ</h5>
                             <h6>по фиксированной стоимости</h6>
@@ -127,8 +126,7 @@
                     </div>
                 </section>
             </div>
-            <section class="container form-wrapper">
-                <span class="side-border"></span>
+            <section class="container form-wrapper side-border">
                 <div class="form-area background-blue z-index">
                     <div class="text">
                         <h5>ПОМОЖЕМ ПЕРЕВЕЗТИ ЛЮБЫЕ ВЕЩИ БЕЗ ХАОСА</h5>
@@ -153,8 +151,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container guarantee-wrapper">
-                <span class="side-border"></span>
+            <section class="container guarantee-wrapper side-border">
                 <div class="title-wrap-position">
                     <div class="title-wrap">
                         <span class="title">гарантии</span>
@@ -224,9 +221,8 @@
                     </div>
                 </div>
             </section>
-            <section class="container service-wrapper">
+            <section class="container service-wrapper side-border">
                 <img class="decor-point-2" src="../images/decor-3.png" alt="decor">
-                <span class="side-border"></span>
                 <div class="holder-title">
                     <div class="title-area z-index">
                         <h5>С НАМИ ЛЕГКО</h5>
@@ -295,8 +291,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="container comfort-wrapper">
-                <span class="side-border"></span>
+            <section class="container comfort-wrapper side-border">
                 <div class="holder-title">
                     <div class="title-area z-index">
                         <h5>БОЛЬШЕ ЧЕМ ПРОСТО ПЕРЕЕЗД</h5>
@@ -339,8 +334,7 @@
                     </div>
                 </section>
             </div>
-            <section class="container reviews-wrapper">
-                <span class="side-border"></span>
+            <section class="container reviews-wrapper side-border">
                 <div class="holder-title">
                     <div class="title-area z-index">
                         <h5>ОТЗЫВЫ</h5>
@@ -357,8 +351,7 @@
                     95% НАШИХ КЛИЕНТИВ ДОВОЛЬНЫ РЕЗУЛЬТАТАМИ И ПЕРЕДАЮТ НА "ИЗ РУК В РУКИ"
                 </div>
             </section>
-            <section class="container the-cost">
-                <span class="side-border"></span>
+            <section class="container the-cost side-border">
                 <div class="holder-title">
                     <div class="title-area z-index">
                         <h5>ФИКСИРОВАННЫЕ ЦЕНЫ</h5>
@@ -424,8 +417,7 @@
                 </div>
             </section>
             <div class="staff-background">
-                <section class="container staff-wrapper">
-                    <span class="side-border"></span>
+                <section class="container staff-wrapper side-border">
                     <div class="holder-title">
                         <div class="title-area z-index">
                             <h5>ВАШИ РАЗГРУЖАТЕЛИ</h5>
@@ -517,8 +509,7 @@
                     </div>
                 </section>
             </div>
-            <section class="container our-everyday-life">
-                <span class="side-border"></span>
+            <section class="container our-everyday-life side-border">
                 <div class="holder-title">
                     <div class="title-area z-index">
                         <h5>ЧТО ЛУЧШЕ РАБОТ</h5>
@@ -563,8 +554,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container wrapper-question-answer">
-                <span class="side-border"></span>
+            <section class="container wrapper-question-answer side-border">
                 <div class="holder-title">
                     <div class="title-area z-index">
                         <h5>ЧАСТО ЗАДАВАЕМЫЕ</h5>
@@ -680,8 +670,7 @@
             </section>
         </main>
         <footer class="footer">
-            <section class="container">
-                <span class="side-border"></span>
+            <section class="container side-border">
                 <div class="footer-wrapper">
                     <div class="logo-social-networks">
                         <a class="logo-footer" href="#">
@@ -878,6 +867,7 @@
           e.preventDefault();
           $(this).toggleClass("active");
           $(".mobile-menu-navigation").toggleClass('show-menu');
+          $("body").toggleClass('overflow-hidden')
       });
     </script>
 </body>

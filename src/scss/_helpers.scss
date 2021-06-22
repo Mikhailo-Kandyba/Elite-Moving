@@ -11,3 +11,34 @@
 .background-blue {
   background: #488E9A;
 }
+
+.side-border {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 940px;
+    left: 8px;
+    top: 0;
+    background: #EBEBEB;
+    z-index: 1;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 940px;
+    right: 22px;
+    top: 0;
+    background: #EBEBEB;
+    z-index: 1;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
