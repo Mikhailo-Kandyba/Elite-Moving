@@ -28,7 +28,7 @@
                     <span class="top"></span>
                     <span class="bottom"></span>
                     <div class="mobile-menu-navigation">
-                        <section class="container">
+                        <section class="container navigation-area">
                             <div class="languages">
                                 <a class="active" href="#">
                                     RU
@@ -115,7 +115,7 @@
             <div class="banner">
                 <section class="container side-border">
                     <div class="banner-content">
-                        <div class="title-area z-index">
+                        <div class="title-area z-index-10">
                             <h5>БЕЗОПАСНЫЕ ПЕРЕЕЗДЫ</h5>
                             <h6>по фиксированной стоимости</h6>
                         </div>
@@ -127,7 +127,7 @@
                 </section>
             </div>
             <section class="container form-wrapper side-border">
-                <div class="form-area background-blue z-index">
+                <div class="form-area background-blue z-index-10">
                     <div class="text">
                         <h5>ПОМОЖЕМ ПЕРЕВЕЗТИ ЛЮБЫЕ ВЕЩИ БЕЗ ХАОСА</h5>
                         <p>
@@ -224,7 +224,7 @@
             <section class="container service-wrapper side-border">
                 <img class="decor-point-2" src="../images/decor-3.png" alt="decor">
                 <div class="holder-title">
-                    <div class="title-area z-index">
+                    <div class="title-area z-index-10">
                         <h5>С НАМИ ЛЕГКО</h5>
                         <h6>И НАДЕЖНО!</h6>
                     </div>
@@ -293,7 +293,7 @@
             </section>
             <section class="container comfort-wrapper side-border">
                 <div class="holder-title">
-                    <div class="title-area z-index">
+                    <div class="title-area z-index-10">
                         <h5>БОЛЬШЕ ЧЕМ ПРОСТО ПЕРЕЕЗД</h5>
                     </div>
                     <div class="title-wrap-position">
@@ -330,13 +330,12 @@
                             ОЩУТИТЕ 100% ВНИМАНИЯ И ЗАБОТЫ
                             ЗАКАЗАВ КВАРТИРНЫЙ ПЕРЕЕЗД «ПОД КЛЮЧ»!
                         </p>
-                        <span class="line-decor z-index"></span>
                     </div>
                 </section>
             </div>
             <section class="container reviews-wrapper side-border">
                 <div class="holder-title">
-                    <div class="title-area z-index">
+                    <div class="title-area z-index-10">
                         <h5>ОТЗЫВЫ</h5>
                     </div>
                     <div class="title-wrap-position">
@@ -353,7 +352,7 @@
             </section>
             <section class="container the-cost side-border">
                 <div class="holder-title">
-                    <div class="title-area z-index">
+                    <div class="title-area z-index-10">
                         <h5>ФИКСИРОВАННЫЕ ЦЕНЫ</h5>
                     </div>
                     <div class="title-wrap-position">
@@ -416,7 +415,7 @@
             <div class="staff-background">
                 <section class="container staff-wrapper side-border">
                     <div class="holder-title">
-                        <div class="title-area z-index">
+                        <div class="title-area z-index-10">
                             <h5>ВАШИ РАЗГРУЖАТЕЛИ</h5>
                         </div>
                         <div class="title-wrap-position">
@@ -427,7 +426,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="wrap-slid-list z-index ">
+                    <div class="wrap-slid-list z-index-10">
                         <ul class="service-guarantee">
                             <li>
                                 <strong>01</strong>
@@ -486,6 +485,11 @@
                                 <div class="">
                                     <div class="background">
                                         <img class="photo" src="../images/slide-photo-1.png" alt="photo">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="background">
+                                        <img class="photo" src="../images/slide-photo-2.png" alt="photo">
                                     </div>
                                 </div>
                                 <div class="">
@@ -667,30 +671,32 @@
             </section>
         </main>
         <footer class="footer">
-            <section class="container side-border">
+            <section class="container side-border footer-area">
                 <div class="footer-wrapper">
-                    <div class="logo-social-networks">
+                    <div class="list-logo">
                         <a class="logo-footer" href="#">
                             <img src="../images/footer-logo.png" alt="logo">
                         </a>
-                        <h5>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h5>
-                        <ul class="list-social-networks">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="list-area">
+                            <h5>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h5>
+                            <ul class="list-social-networks">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="the-lists">
                         <ul class="contacts-list">
@@ -708,7 +714,7 @@
                                     mailname@gmail.com
                                 </a>
                             </li>
-                            <li class="telephone">
+                            <li class="phone">
                                 <a href="tel:+380981234567">+3(8098)123 45 67</a>
                             </li>
                             <li class="schedule">
@@ -841,16 +847,16 @@
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 767,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           },
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           }
