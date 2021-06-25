@@ -2861,7 +2861,12 @@ h6 {
           .blog-page .moving .list-right li .title-area .title:after {
             width: 20px;
             left: -27px;
-            top: 8px; } }
+            top: 8px; }
+  .blog-page .slick-prev,
+  .blog-page .slick-next {
+    bottom: 4px; }
+  .blog-page .feedback-slider .slick-dots {
+    bottom: 14px; } }
 
 .banner-content .title-area {
   max-width: 610px;

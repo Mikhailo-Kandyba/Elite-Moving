@@ -470,16 +470,18 @@
         }
       }
     }
+  }
 
+  .blog-page {
+    .slick-prev,
+    .slick-next {
+      bottom: 4px;
+    }
 
-
-
-
-
-
-
-
-
-
+    .feedback-slider {
+      .slick-dots {
+        bottom: 14px;
+      }
+    }
   }
 }
