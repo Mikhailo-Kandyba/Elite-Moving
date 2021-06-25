@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<head>
+    <title>Elite-Moving</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--библиотека для карусель-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/services-page.css">
+    <!--шрифты-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Prosto+One&display=swap" rel="stylesheet">
+    <!--библиотека иконок-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+<div id="wrapper">
+    <header class="header z-index-100">
+        <section class="container header-wrapper">
+            <div class="decoration-wrapper z-index-100">
+                <span class="left"></span>
+                <span class="right"></span>
+            </div>
+            <a class="logo z-index-100" href="#">
+                <img src="../src/images/logo.png" alt="logo">
+            </a>
+            <div class="btn-menu">
+                <span class="top"></span>
+                <span class="bottom"></span>
+                <div class="mobile-menu-navigation">
+                    <section class="container navigation-area">
+                        <div class="languages">
+                            <a class="active" href="#">
+                                RU
+                            </a>
+                            <a href="#">
+                                UA
+                            </a>
+                        </div>
+                        <div class="title">
+                            МЕНЮ
+                        </div>
+                        <ul class="navigation">
+                            <li class="active">
+                                <a href="#">
+                                    КВАРТИРНЫЙ ПЕРЕЕЗД
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    ОФИСНЫЙ ПЕРЕЕЗД
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    ПЕРЕЕЗД ДОМА
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    АВТОПАРК
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    О НАС
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    БЛОГ
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="numbers">
+                            <a href="tel:+380981234567">+38098 123 45 67</a>
+                            <a href="tel:+380981234567">+38098 123 45 67</a>
+                            <a href="tel:+380981234567">+38098 123 45 67</a>
+                        </div>
+                        <div class="social-networks">
+                            <ul class="list">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../src/images/viber.png" alt="viber">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="banner">
+            <section class="container side-border">
+                <div class="banner-content">
+                    <div class="title-area z-index-10">
+                        <h5>КВАРТИРНЫЙ ПЕРЕЕЗД</h5>
+                        <h6>по фиксированной стоимости</h6>
+                        <h4>ПРОФЕССИОНАЛЬНО ВЫПОЛНИМ ПЕРЕЕЗД КВАРТИРЫ “ПОД КЛЮЧ”</h4>
+                        <h3>Заранее расчитаем цену, вовремя приедем, разберем мебель, упакуем, аккуратно перевезем и расставим все по местам</h3>
+                    </div>
+                    <a class="video-button" href="#">
+                        <span>Смотреть полное видео</span>
+                        <button class="btn"></button>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="container form-wrapper side-border">
+            <div class="form-area background-blue z-index-10">
+                <div class="text">
+                    <h5>ПОМОЖЕМ ПЕРЕВЕЗТИ ЛЮБЫЕ ВЕЩИ БЕЗ ХАОСА</h5>
+                    <p>
+                        рассчитаем цену заранее, приедем, упакуем,
+                        аккуратно перевезем и расставим по местам
+                    </p>
+                </div>
+                <div class="form-btn">
+                    <div class="form-group">
+                        <input type="tel" id="tel" placeholder="+38 (_ _ _) _ _ _  _ _  _ _" name="tel" value="">
+                    </div>
+                    <div class="holder-btn">
+                        <a class="btn" href="#sub-modal" rel="modal:open">
+                            <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                        </a>
+                        <p>
+                            Нажимая кнопку «Рассчитать стоимость»,
+                            вы соглашаетесь с правилами
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container guarantee-wrapper side-border">
+            <div class="title-wrap-position">
+                <div class="title-wrap">
+                    <span class="title">гарантии</span>
+                    <span class="title-line"></span>
+                    <span class="title-number">01</span>
+                </div>
+            </div>
+            <div class="guarantee">
+                <div class="img-area">
+                    <div class="background">
+                        <img class="photo" src="../src/images/photo-guarantee.png" alt="photo">
+                    </div>
+                    <img class="decor-point" src="../src/images/decor.png" alt="decor">
+                    <span class="decor-border"></span>
+                </div>
+                <div class="title-area-service-guarantee">
+                    <div class="title-area">
+                        <h5>МЫ ГАРАНТИРУЕМ</h5>
+                        <h6>СОХРАННОСТЬ ВАШЕГО ИМУЩЕСТВА</h6>
+                    </div>
+                    <ul class="service-guarantee">
+                        <li>
+                            <strong>01</strong>
+                            <div>
+                                <p>
+                                    C каждым клиентом заключаем договор, в котором зафиксирована наша ответственность за сохранность
+                                    имущества
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>02</strong>
+                            <div>
+                                <p>
+                                    Разбираем, правильно упаковываем мебель и
+                                    профессионально собираем на новом месте
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>03</strong>
+                            <div>
+                                <p>
+                                    Для упаковки и защиты имущества используем
+                                    качественный упаковочный материал
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>04</strong>
+                            <div>
+                                <p>
+                                    Во время квартирного переезда защищаем
+                                    дверные проемы, лифтовые кабины, колонны
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>05</strong>
+                            <div>
+                                <p>
+                                    Ваше имущество застраховано от повреждений!
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container comfort-wrapper side-border">
+            <div class="holder-title">
+                <div class="title-area z-index-10">
+                    <h5>БОЛЬШЕ ЧЕМ ПРОСТО ПЕРЕЕЗД</h5>
+                </div>
+                <div class="title-wrap-position">
+                    <div class="title-wrap">
+                        <span class="title">комфорт</span>
+                        <span class="title-line"></span>
+                        <span class="title-number">02</span>
+                    </div>
+                </div>
+            </div>
+            <div class="comfort-text">
+                <div class="weight-600">
+                    В ОРГАНИЗАЦИИ ПЕРЕЕЗДА ПОД КЛЮЧ МЫ ПРЕВОСХОДИМ ОЖИДАНИЯ КЛИЕНТА.
+                    МЫ НЕ ПРОСТО ВЫПОЛНЯЕМ РАБОТУ ЛУЧШЕ БОЛЬШИНСТВО КОМПАНИЙ В КИЕВЕ.
+                    МЫ ПЕРВЫЕ, КТО ФОРМИРУЕТ ЭТАЛОННЫЙ СТАНДАРТ КАЧЕСТВА СРЕДИ МУВИНГОВЫХ КОМПАНИЙ
+                </div>
+                <div class="weight-400">
+                    Мы точно сориентируем по времени и количеству грузчиков,
+                    подберем оптимальный транспорт, если нужно - приедет мастер,
+                    чтобы правильно отключить, а потом подключить всю электронику
+                    или сантехнику, для сохранности вещей можем предоставить картонную
+                    упаковку, пластиковые боксы, или даже сейф.
+                    Если у вас большой объект, то к вам приедет наш специалист,
+                    чтобы бесплатно все оценить и правильно спланировать. Ну и
+                    если вдруг мы что-то разобьем или поломаем - то мы возместим
+                    ущерб, потому мы очень аккуратные
+                </div>
+            </div>
+        </section>
+        <div class="full-construction z-index-100">
+            <section class="container">
+                <div class="text">
+                    <p>
+                        ОЩУТИТЕ 100% ВНИМАНИЯ И ЗАБОТЫ
+                        ЗАКАЗАВ КВАРТИРНЫЙ ПЕРЕЕЗД «ПОД КЛЮЧ»!
+                    </p>
+                </div>
+            </section>
+        </div>
+        <section class="container reviews-wrapper side-border">
+            <div class="holder-title">
+                <div class="title-area z-index-10">
+                    <h5>ОТЗЫВЫ</h5>
+                </div>
+                <div class="title-wrap-position">
+                    <div class="title-wrap">
+                        <span class="title">о нас говорят</span>
+                        <span class="title-line"></span>
+                        <span class="title-number">03</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-text">
+                95% НАШИХ КЛИЕНТИВ ДОВОЛЬНЫ РЕЗУЛЬТАТАМИ И ПЕРЕДАЮТ НА "ИЗ РУК В РУКИ"
+            </div>
+        </section>
+        <section class="container the-cost side-border">
+            <div class="holder-title">
+                <div class="title-area z-index-10">
+                    <h5>ФИКСИРОВАННЫЕ ЦЕНЫ</h5>
+                </div>
+                <div class="title-wrap-position">
+                    <div class="title-wrap">
+                        <span class="title">стоимость</span>
+                        <span class="title-line"></span>
+                        <span class="title-number">04</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-text">
+                В ДЕНЬ ПЕРЕЕЗДА НЕ БУДЕТ ВНЕЗАПНЫХ ДОПЛАТ
+            </div>
+            <div class="the-cost-wrapper">
+                <div class="col-1">
+                    <div class="text">
+                        Мы оцениваем стоимость по объёму вещей — достаточно отправить нам
+                        фотографии того, что вы хотите перевезти. Так мы поймём,
+                        сколько времени займёт переезд, сколько муверов и упаковки понадобится.
+                    </div>
+                    <ul class="the-cost-list">
+                        <li class="the-main">
+                            <p>ЧТО ВХОДИТ В СТОИМОСТЬ:</p>
+                        </li>
+                        <li>
+                            <a href="#">Упаковочные материалы</a>
+                        </li>
+                        <li>
+                            <a href="#">Разборка мебели</a>
+                        </li>
+                        <li>
+                            <a href="#">Упаковка вещей</a>
+                        </li>
+                        <li>
+                            <a href="#">Вынос и погрузка</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Выгрузка и подъём</a>
+                        </li>
+                        <li>
+                            <a href="#">Сборка мебели, установка подключение электроприборов.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="img-area">
+                        <div class="background">
+                            <img class="photo" src="../src/images/the-cost-photo.png" alt="photo">
+                        </div>
+                        <img class="decor-point" src="../src/images/decor-2.png" alt="decor">
+                        <span class="decor-border"></span>
+                        <span class="text">У НАС ВЫ МОЖЕТЕ ПРИОБРЕСТИ ЛЮБОЙ УПАКОВОЧНЫЙ МАТЕРИАЛ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container choice-of-tariff side-border">
+            <div class="holder-title">
+                <div class="title-area z-index-10">
+                    <h5>ВЫБОР ТАРИФА ЗА ВАМИ</h5>
+                </div>
+                <div class="title-wrap-position">
+                    <div class="title-wrap">
+                        <span class="title">тарифы</span>
+                        <span class="title-line"></span>
+                        <span class="title-number">05</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-text">
+                СТОИМОСТЬ ВАШЕГО ПЕРЕЕЗДА МЕНЕДЖЕР ПОСЧИТАЕТ ПО ТЕЛЕФОНУ ИЛИ ПРИЕДЕТ НА ОБЬЕКТ
+            </div>
+            <div class="categories">
+                <div class="col">
+                    <div class="title">
+                        СТАНДАРТ
+                    </div>
+                    <ul class="list-of-categories">
+                        <li>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
+                        </li>
+                        <li>
+                            Менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить
+                        </li>
+                        <li>
+                            Навык публичных выступлений в домашних условиях
+                        </li>
+                        <li>
+                            При создании генератора мы использовали небезизвестный
+                        </li>
+                        <li>
+                            Универсальный код речей Текст
+                        </li>
+                        <li>
+                            Генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать
+                        </li>
+                        <li>
+                            Текст более привлекательным и живым для визуально-слухового восприятия
+                        </li>
+                        <li>
+                            По своей сути рыбатекст является альтернативой традиционному lorem ipsum
+                        </li>
+                        <li>
+                            Который вызывает у некторых людей недоумение при попытках прочитать рыбу текст
+                        </li>
+                        <li>
+                            В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
+                        </li>
+                    </ul>
+                    <p class="price">цена от <strong>5 000</strong>грн</p>
+                    <div class="holder-btn">
+                        <button class="btn">ЗАКАЗАТЬ</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="title">
+                        УЛУЧШЕНЫЙ
+                    </div>
+                    <ul class="list-of-categories">
+                        <li>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
+                        </li>
+                        <li>
+                            Менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить
+                        </li>
+                        <li>
+                            Навык публичных выступлений в домашних условиях
+                        </li>
+                        <li>
+                            При создании генератора мы использовали небезизвестный
+                        </li>
+                        <li>
+                            Универсальный код речей Текст
+                        </li>
+                        <li>
+                            Генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать
+                        </li>
+                        <li>
+                            Текст более привлекательным и живым для визуально-слухового восприятия
+                        </li>
+                        <li>
+                            По своей сути рыбатекст является альтернативой традиционному lorem ipsum
+                        </li>
+                        <li>
+                            Который вызывает у некторых людей недоумение при попытках прочитать рыбу текст
+                        </li>
+                        <li>
+                            В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
+                        </li>
+                    </ul>
+                    <p class="price">цена от <strong>10 000</strong>грн</p>
+                    <div class="holder-btn">
+                        <button class="btn">ЗАКАЗАТЬ</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="title">
+                        ПРЕМИУМ
+                    </div>
+                    <ul class="list-of-categories">
+                        <li>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
+                        </li>
+                        <li>
+                            Менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить
+                        </li>
+                        <li>
+                            Навык публичных выступлений в домашних условиях
+                        </li>
+                        <li>
+                            При создании генератора мы использовали небезизвестный
+                        </li>
+                        <li>
+                            Универсальный код речей Текст
+                        </li>
+                        <li>
+                            Генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать
+                        </li>
+                        <li>
+                            Текст более привлекательным и живым для визуально-слухового восприятия
+                        </li>
+                        <li>
+                            По своей сути рыбатекст является альтернативой традиционному lorem ipsum
+                        </li>
+                        <li>
+                            Который вызывает у некторых людей недоумение при попытках прочитать рыбу текст
+                        </li>
+                        <li>
+                            В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
+                        </li>
+                    </ul>
+                    <p class="price">цена от <strong>15 000</strong>грн</p>
+                    <div class="holder-btn">
+                        <button class="btn">ЗАКАЗАТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container approximate-price side-border">
+            <div class="holder-title z-index-10">
+                <div class="title-area z-index-10">
+                    <h5>ПРИМЕРНЫЕ ЦЕНЫ ПЕРЕЕЗДОВ "ПОД КЛЮЧ"</h5>
+                </div>
+                <div class="title-wrap-position">
+                    <div class="title-wrap">
+                        <span class="title">примерная цена</span>
+                        <span class="title-line"></span>
+                        <span class="title-number">06</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-area">
+                <div class="position">
+                    <div class="photo">
+                        <img src="../src/images/price-photo.png" alt="photo">
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="text">
+                        <p class="text-left">ПЕРЕЕЗД ДОМА 200 М2</p>
+                        <p class="text-right">Вашу стоимость мы посчитаем индивидуально под ваш запрос</p>
+                    </div>
+                    <ul class="price-list">
+                        <li>
+                            <p>Стоимость фуры -</p>
+                            <strong>650 грн/час</strong>
+                        </li>
+                        <li>
+                            <p>4 человека - </p>
+                            <strong>640 грн/час (160 грн/час/чел)</strong>
+                        </li>
+                        <li>
+                            <p>Потраченное время - </p>
+                            <strong>6 часов</strong>
+                        </li>
+                        <li>
+                            <p>Коробки - </p>
+                            <strong>25 шт (25*70=1750)</strong>
+                        </li>
+                        <li>
+                            <p>Стрейсч пленка - </p>
+                            <strong>2 рулона (400*2=800)</strong>
+                        </li>
+                        <li>
+                            <p>Скотч - </p>
+                            <strong>2 шт (60*2=120)</strong>
+                        </li>
+                        <li>
+                            <p>ВПП (пупырчатая пленка) - </p>
+                            <strong>15м (15*15=225)</strong>
+                        </li>
+                        <li>
+                            <p>Разбор офисных столов - </p>
+                            <strong>20 шт (20*150=3000)</strong>
+                        </li>
+                        <li>
+                            <p>Демонтаж кухни - </p>
+                            <strong>1000 грн</strong>
+                        </li>
+                        <li>
+                            <p>Сейф 100кг - </p>
+                            <strong>предмет свыше 80 кг 3грн/кг (100*3=300)</strong>
+                        </li>
+                    </ul>
+                    <p class="order">15 445 <strong>ГРН</strong></p>
+                    <div class="holder-btn">
+                        <button class="btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                        <a href="#">Далее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container advantages side-border">
+            <div class="holder-title">
+                <div class="title-area z-index-10">
+                    <h5>ПОЧЕМУ ИМЕННО МЫ?</h5>
+                </div>
+                <div class="title-wrap-position">
+                    <div class="title-wrap">
+                        <span class="title">преимущества</span>
+                        <span class="title-line"></span>
+                        <span class="title-number">07</span>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-advantages">
+                <li>
+                    <h4>ОПТИМАЛЬНО</h4>
+                    <p>
+                        Мы - мастера своего дела, так что с легкостью
+                        загрузим в одну машину то, что другие загрузили
+                        бы в три. У нас также можно приобрести все виды
+                        упаковочных материалов
+                    </p>
+                    <span>01</span>
+                </li>
+                <li>
+                    <h4>ОПЕРАТИВНО</h4>
+                    <p>
+                        Мы назовем вам примерное время, которое нам
+                        понадобится, но постараемся справится еще быстрее
+                    </p>
+                    <span>02</span>
+                </li>
+                <li>
+                    <h4>НАДЕЖНО</h4>
+                    <p>
+                        Вам точно не придется переживать за сохранность
+                        своих вещей - об этом позаботятся наши супервайзеры,
+                        которые контролируют качество каждого переезда
+                    </p>
+                    <span>03</span>
+                </li>
+                <li class="insured">
+                    <h4>ЗАСТРАХОВАНО</h4>
+                    <p>
+                        Мы знаем, что несем материальную ответственность за все,
+                        что переносим. Это добавляет +100 к аккуратности каждого нашего
+                        грузчика
+                    </p>
+                    <span>04</span>
+                    <img src="../src/images/seal.png" alt="seal">
+                </li>
+            </ul>
+        </section>
+        <div class="staff-background">
+            <section class="container staff-wrapper side-border">
+                <div class="holder-title">
+                    <div class="title-area z-index-10">
+                        <h5>ВАШИ МУВЕРЫ</h5>
+                    </div>
+                    <div class="title-wrap-position">
+                        <div class="title-wrap">
+                            <span class="title">сотрудники</span>
+                            <span class="title-line"></span>
+                            <span class="title-number">08</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-slid-list z-index-10">
+                    <ul class="service-guarantee">
+                        <li>
+                            <strong>01</strong>
+                            <div>
+                                <p>
+                                    Мотивированны, ответственны, обученны
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>02</strong>
+                            <div>
+                                <p>
+                                    Как пожарные, готовы приехать в любое время ,в выходные и праздничные дни
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>03</strong>
+                            <div>
+                                <p>
+                                    Все сотрудники применют в работе стандарты и нормативы, разработанные в компании
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text">
+                                НА ОБЬЕКТЕ ВСЕГДА ПРИСУТСТВУЕТ БРИГАДИР,
+                                КОТОРЫЙ ОРГАНИЗОВЫВАЕТ И КОНТРОЛИРУЕТ РАБОТУ БРИГАДЫ
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="photos-of-employees-seal-text">
+                        <div class="photos-of-employees">
+                            <div class="">
+                                <div class="background">
+                                    <img class="photo" src="../src/images/slide-photo-1.png" alt="photo">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="background">
+                                    <img class="photo" src="../src/images/slide-photo-2.png" alt="photo">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="background">
+                                    <img class="photo" src="../src/images/slide-photo-1.png" alt="photo">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="background">
+                                    <img class="photo" src="../src/images/slide-photo-2.png" alt="photo">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="background">
+                                    <img class="photo" src="../src/images/slide-photo-2.png" alt="photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="container wrapper-transparent-text">
+            <div class="transparent-text">
+                <p>
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев более менее осмысленного текста
+                    рыбы на русском языке, а начинающему оратору отточить навык публичных
+                    выступлений в домашних условиях. При создании генератора мы использовали
+                    небезизвестный универсальный код речей. Текст генерируется абзацами случайным
+                    образом от двух до десяти предложений в абзаце, что позволяет сделать текст
+                    более привлекательным и живым для визуально-слухового восприятия.
+                </p>
+                <p>
+                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+                    который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
+                    В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                    непонятным смыслом и придаст неповторимый колорит советских времен.
+                </p>
+            </div>
+            <div class="holder-btn">
+                <button class="btn">РАЗВЕРНУТЬ</button>
+            </div>
+        </section>
+        <section class="container our-everyday-life side-border">
+            <div class="holder-title">
+                <div class="title-area z-index">
+                    <h5>ЧТО ЛУЧШЕ РАБОТ</h5>
+                    <h6>СКАЖЕТ О КОМПАНИИ?</h6>
+                </div>
+                <div class="title-wrap-position">
+                    <div class="title-wrap">
+                        <span class="title">наши будни</span>
+                        <span class="title-line"></span>
+                        <span class="title-number">09</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-text">
+                СМОТРИТЕ ВЫПОЛНЕННЫЕ ЗАДАЧИ, НАМ ЕСТЬ ЧТО РАССКАЗАТЬ И ПОКАЗАТЬ
+            </div>
+            <div class="wrap-list">
+                <ul class="list-weekdays">
+                    <li class="list-item">
+                        <div class="background">
+                            <img class="photo" src="../src/images/weekdays-photo-1.png" alt="photo">
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="background">
+                            <img class="photo" src="../src/images/weekdays-photo-2.png" alt="photo">
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="background">
+                            <img class="photo" src="../src/images/weekdays-photo-3.png" alt="photo">
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="background">
+                            <img class="photo" src="../src/images/weekdays-photo-4.png" alt="photo">
+                        </div>
+                    </li>
+                </ul>
+                <div class="background">
+                    <img class="photo" src="../src/images/weekdays-photo-5.png" alt="photo">
+                </div>
+            </div>
+        </section>
+        <section class="container wrapper-question-answer side-border">
+            <div class="holder-title">
+                <div class="title-area z-index">
+                    <h5>ЧАСТО ЗАДАВАЕМЫЕ</h5>
+                    <h6>ВОПРОСЫ</h6>
+                </div>
+                <div class="title-wrap-position">
+                    <div class="title-wrap">
+                        <span class="title">вопрос-ответ</span>
+                        <span class="title-line"></span>
+                        <span class="title-number">10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle">
+                <div class="title-service">
+                    <div class="text">
+                        <h5>САМЫЕ ЧАСТЫЕ ВОПРОСЫ И ОТВЕТЫ НА НИХЮ</h5>
+                        <h6>
+                            МИ СОБИРАЕМ ИХ В ХОДЕ РАЗГОВОРОВ С КЛИЕНТАМИ<br>И ДОБАВЛЯЕМ ИХ СЮДА, ЧТОБЫ КАЖДЫЙ ИМЕЛ ДОСТУП
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="questions">
+                <div class="holder-accordion">
+                    <div class="accordion-answers">
+                        <div>
+                            <h5 class="title">
+                                ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                            </h5>
+                            <div>
+                                <p>
+                                    Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="title">
+                                ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                            </h5>
+                            <div>
+                                <p>
+                                    Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="title">
+                                ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                            </h5>
+                            <div>
+                                <p>
+                                    Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="title">
+                                ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                            </h5>
+                            <div>
+                                <p>
+                                    Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="title">
+                                ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                            </h5>
+                            <div>
+                                <p>
+                                    Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="title">
+                                ПОДСКАЖИТЕ, В КАКИХ ГОРОДАХ ВЫ РАБОТАЕТЕ?
+                            </h5>
+                            <div>
+                                <p>
+                                    Рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навых
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-area background-blue">
+                <div class="text">
+                    <h5>ПОМОЖЕМ ПЕРЕВЕЗТИ ЛЮБЫЕ ВЕЩИ БЕЗ ХАОСА</h5>
+                    <p>
+                        рассчитаем цену заранее, приедем, упакуем,
+                        аккуратно перевезем и расставим по местам
+                    </p>
+                </div>
+                <div class="form-btn">
+                    <div class="form-group">
+                        <input type="tel" id="tel" placeholder="+38 (_ _ _) _ _ _  _ _  _ _" name="tel" value="">
+                    </div>
+                    <div class="holder-btn">
+                        <a class="btn" href="#sub-modal" rel="modal:open">
+                            <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                        </a>
+                        <p>
+                            Нажимая кнопку «Рассчитать стоимость»,
+                            вы соглашаетесь с правилами
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="container side-border footer-area">
+            <div class="footer-wrapper">
+                <div class="list-logo">
+                    <a class="logo-footer" href="#">
+                        <img src="../src/images/footer-logo.png" alt="logo">
+                    </a>
+                    <div class="list-area">
+                        <h5>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h5>
+                        <ul class="list-social-networks">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="the-lists">
+                    <ul class="contacts-list">
+                        <li class="title">
+                            КОНТАКТЫ
+                        </li>
+                        <li>
+                            <address>
+                                г. Киев, пр. Московский, 32
+                                метро Название
+                            </address>
+                        </li>
+                        <li class="mail">
+                            <a href="mailto: mailname@gmail.com">
+                                mailname@gmail.com
+                            </a>
+                        </li>
+                        <li class="phone">
+                            <a href="tel:+380981234567">+3(8098)123 45 67</a>
+                        </li>
+                        <li class="schedule">
+                            Звоните нам с 10:00 до 19:00
+                            Без выходных
+                        </li>
+                    </ul>
+                    <ul class="elite-moving">
+                        <li class="title">ELITE MOVING</li>
+                        <li>
+                            <a href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="help-and-support">
+                        <li class="title">ПОМОЩЬ И ПОДЕРЖКА</li>
+                        <li class="wrap-list">
+                            <ul class="list-1">
+                                <li>
+                                    <a href="#">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="#">Стоимость</a>
+                                </li>
+                                <li>
+                                    <a href="#">Способы оплаты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Гарантии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Страховка</a>
+                                </li>
+                            </ul>
+                            <ul class="list-2">
+                                <li>
+                                    <a href="#">О персональных данных</a>
+                                </li>
+                                <li>
+                                    <a href="#">Конфиденциальность</a>
+                                </li>
+                                <li>
+                                    <a href="#">Договор-оферы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Карта сайта</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="rights">© 2021 Все права защищенны. Elite Moving</p>
+        </section>
+    </footer>
+    <div id="sub-modal" class="modal">
+        <a class="close-btn" href="#" rel="modal:close">
+        </a>
+        <div class="modal-content background-blue">
+            <img src="../src/images/modal-photo.png" alt="photo">
+            <div class="text-form">
+                <div class="text">
+                    <h3>
+                        ФОРМА ОБРАТНОЙ СВЯЗИ
+                    </h3>
+                    <p>
+                        Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время
+                    </p>
+                </div>
+                <form class="contact-form" action="#">
+                    <div class="form-group">
+                        <input type="text" id="Name" placeholder="Введите ваше имя" name="name" value="">
+                    </div>
+                    <div class="form-group-tel">
+                        <input type="tel" id="tel" placeholder="+38 (_ _ _) _ _ _  _ _  _ _" name="tel" value="">
+                    </div>
+                    <div class="form-group-checkbox">
+                        <div class="form-group-2">
+                            <input type="checkbox" id="indeterminate">
+                            <label for="indeterminate">Соглашаюсь с обработкой персональных данных</label>
+                        </div>
+                    </div>
+                    <button class="btn">ВОЙТИ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--библиотека для всего, для кнопки меню-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--библиотека для карусель-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--библиотека для аккордиона-->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script>
+
+    <!--js accordion-->
+    $( function() {
+        $(".accordion-answers").accordion({
+            collapsible: true,
+            header: ".title",
+        });
+    } );
+
+
+
+    <!--js карусель-->
+    $('.photos-of-employees').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+
+
+    <!--js кнопка меню-->
+    $(".btn-menu").on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass("active");
+        $(".mobile-menu-navigation").toggleClass('show-menu');
+        $("body").toggleClass('overflow-hidden')
+    });
+</script>
+</body>
+</html>
