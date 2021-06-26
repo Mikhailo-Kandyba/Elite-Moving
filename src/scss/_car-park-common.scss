@@ -1,0 +1,612 @@
+.car-park {
+  .breadcrumb {
+    display: flex;
+    padding: 14px;
+    list-style: none;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 68px;
+
+    .active {
+      color: #717171;
+    }
+  }
+
+  .breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "-";
+  }
+
+  .breadcrumb {
+    li {
+      a {
+        color: #161616;
+        text-decoration: none;
+
+        &:hover {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .breadcrumb-wrapper {
+    margin-top: 100px;
+  }
+  .header {
+    background: #3D3D3D;
+  }
+
+  .car-park-area-wrapper {
+    margin-bottom: 120px;
+  }
+
+  .title-area {
+    margin-top: 0;
+    padding-right: 0;
+    margin-bottom: 11px;
+    color: #161616;
+    padding: 22px 20px 18px 99px;
+
+
+    .title {
+      font-family: 'Prosto One', cursive;
+      font-size: 40px;
+      line-height: 50px;
+      position: relative;
+      color: #161616;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 94px;
+        height: 1px;
+        left: -105px;
+        top: 25px;
+        background: #161616;
+        z-index: 10;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        left: -18px;
+        top: 22px;
+        background: #161616;
+        z-index: 10;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .car-park-area {
+    .text-list {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 38px;
+
+      p {
+        max-width: 855px;
+      }
+    }
+
+    .holder-btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 9px;
+
+      .btn {
+        padding: 22px 101px 20px;
+      }
+    }
+  }
+
+  .car-park-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 6px -20px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 1280px;
+      left: 652px;
+      top: -373px;
+      background: #EBEBEB;
+      transform: rotate(-90deg);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 546px;
+      left: 649px;
+      top: -6px;
+      background: #EBEBEB;
+    }
+
+    .list-wrap {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 81px;
+      position: relative;
+
+      .characteristics {
+        padding: 0 0 0 35px;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 230px;
+          left: 0;
+          top: 0;
+          background: #EBEBEB;
+        }
+
+        li {
+          margin-bottom: 16px;
+        }
+        .title {
+          font-weight: 600;
+        }
+
+        :nth-child(5),
+        :nth-child(6),
+        :nth-child(7) {
+          font-weight: 600;
+          position: relative;
+          margin-left: 29px;
+          margin-top: -6px;
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: -30px;
+            top: 4px;
+            background-image: url("../images/vector-car.png");
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+
+
+  .holder-slide {
+    display: flex;
+    margin: 0 -2px 5px -18px;
+
+    .blog-wrap {
+      padding: 0 11px;
+
+      div {
+        .date {
+          font-size: 14px;
+          line-height: 17px;
+          color: #717171;
+          display: block;
+          margin-bottom: 0;
+          margin-left: 74px;
+        }
+
+        .title-area {
+          padding: 0 110px 0 74px;
+
+          .title {
+            font-size: 25px;
+            line-height: 31px;
+
+            &:after {
+              width: 62px;
+              left: -74px;
+            }
+          }
+        }
+
+        p {
+          padding: 0 1px 0 76px;
+        }
+      }
+    }
+  }
+
+  .blog-slider {
+    max-width: 100%;
+    position: relative;
+    margin: 0 0 200px 0;
+
+    .slick-dots {
+      display: flex;
+      margin-top: -26px;
+      position: relative;
+      bottom: -50px;
+      left: 800px;
+
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 344px;
+        height: 1px;
+        top: 15px;
+        left: 0;
+        background: #9D9D9D;
+      }
+
+      button {
+        font-size: 0;
+        background: #55B197;
+        border: none;
+        padding: 2px 12px;
+        position: relative;
+        z-index: 5;
+      }
+    }
+
+    .slick-slide {
+      padding: 0 15px;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    margin-top: -70px;
+    left: 0;
+    z-index: 5;
+    border: none;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    left: auto;
+    right: -7px;
+    bottom: -66px;
+    top: auto;
+    height: 40px;
+    width: 18px;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 0;
+    margin-right: 15px;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .slick-prev {
+    margin-right: 15px;
+
+    &:after {
+      background-image: url(../images/vector-3.png);
+      transform: rotate(0deg);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      top: 9px;
+      left: -108px;
+      color: #488E9A;
+    }
+  }
+
+  .slick-next {
+    margin-right: 55px;
+    left: 95%;
+
+    &:after {
+      background-image: url(../images/vector-3.png);
+      transform: rotate(-180deg);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      top: 9px;
+      left: 37px;
+      color: #A0A0A0;
+    }
+  }
+}
+
+@media (max-width: 1309px) {
+  .car-park {
+    .car-park-list {
+      &:after {
+        top: 33px;
+        height: 980px;
+        left: 510px;
+      }
+
+      &:before {
+        left: 529px;
+        top: 284px;
+      }
+    }
+  }
+
+  .car-park {
+    .blog-slider {
+      .slick-dots {
+        left: 500px;
+      }
+    }
+  }
+
+  .car-park {
+    .holder-slide {
+      .blog-wrap {
+        div {
+          .title-area {
+            padding: 0 0 0 74px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .car-park {
+    .breadcrumb {
+      margin-bottom: 0;
+    }
+
+    .title-area {
+      padding: 0 20px 0 99px;
+    }
+
+    .car-park-list {
+      &:after {
+        top: 133px;
+        height: 700px;
+        left: 380px;
+      }
+
+      &:before {
+        left: 389px;
+        top: 244px;
+      }
+
+      .list-wrap {
+        margin-bottom: 30px;
+      }
+    }
+
+      .holder-slide {
+        .blog-wrap {
+          div {
+            .title-area {
+              padding: 0 0 0 24px;
+
+              .title {
+                &:after {
+                  width: 11px;
+                  left: -25px;
+                }
+              }
+            }
+
+            p {
+              padding: 0 0 0 26px;
+            }
+          }
+        }
+      }
+
+      .blog-slider {
+        margin: 0 23px 95px -9px;
+
+        .slick-dots {
+          left: 270px;
+        }
+      }
+  }
+
+  .car-park .slick-prev {
+    right: -31px;
+  }
+}
+
+@media (max-width: 767px) {
+  .car-park {
+    .breadcrumb-wrapper {
+      margin-top: 47px;
+
+      .breadcrumb {
+        padding: 13px 9px 0;
+        margin-bottom: 7px;
+      }
+
+      li {
+        a {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .title-area {
+      padding-right: 0;
+      margin-bottom: 1px;
+      padding: 22px 20px 6px 30px;
+
+      .title {
+        font-size: 25px;
+        line-height: 30px;
+
+        &:before {
+          width: 5px;
+          height: 5px;
+          left: -8px;
+          top: 6px;
+        }
+
+        &:after {
+          width: 21px;
+          height: 1px;
+          left: -27px;
+          top: 8px;
+        }
+      }
+    }
+
+    .car-park-list {
+      flex-direction: column;
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        display: none;
+      }
+
+      .list-wrap {
+        width: 70%;
+        .characteristics {
+          padding: 0;
+
+          :nth-child(5),
+          :nth-child(6),
+          :nth-child(7) {
+            margin-top: 6px;
+          }
+
+
+            li {
+            margin-bottom: 1px;
+
+            p {
+              font-size: 15px;
+              line-height: 30px;
+            }
+          }
+
+          &:after {
+            display: none;
+          }
+
+          .title {
+            font-size: 15px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+
+    .car-park-area {
+      .text-list {
+        margin-bottom: 21px;
+
+        p {
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .holder-slide {
+      flex-direction: column;
+
+      .blog-wrap {
+        div {
+          .date {
+            display: none;
+          }
+
+          p {
+            font-size: 15px;
+            line-height: 19px;
+          }
+          .title-area {
+            .title {
+              font-size: 14px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+
+    .car-park-area-wrapper {
+      margin-bottom: 52px;
+    }
+
+    .blog-slider {
+      margin: 0 20px 104px 16px;
+
+      .slick-dots {
+        left: 75px;
+
+        &:after {
+          width: 128px;
+        }
+
+        button {
+          padding: 2px 3px;
+        }
+      }
+
+      .slick-next {
+        left: 81%;
+      }
+
+    }
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+}
