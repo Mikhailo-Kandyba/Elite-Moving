@@ -1,0 +1,715 @@
+.about-us {
+  .breadcrumb {
+    display: flex;
+    padding: 14px;
+    list-style: none;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 68px;
+
+    .active {
+      color: #717171;
+    }
+  }
+
+  .breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "-";
+  }
+
+  .breadcrumb {
+    li {
+      a {
+        color: #161616;
+        text-decoration: none;
+
+        &:hover {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .header {
+    background: #3D3D3D;
+  }
+
+  .breadcrumb-wrapper {
+    margin-top: 100px;
+  }
+
+  .our-company-wrapper {
+    margin-bottom: 52px;
+  }
+
+
+
+  .our-company-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7px 0 -5px;
+    position: relative;
+    margin-bottom: -103px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 596px;
+      height: 749px;
+      left: 1003px;
+      top: -115px;
+      z-index: -1;
+      background: #3D3D3D;
+    }
+
+    .img-slogan {
+      .slogan {
+        display: block;
+        font-weight: 600;
+        max-width: 445px;
+        text-align: right;
+        padding: 29px 0;
+      }
+    }
+
+    .our-company-text {
+      max-width: 530px;
+
+      .title-area {
+        margin-top: 0;
+        padding-right: 0;
+        margin-bottom: 11px;
+        color: #161616;
+        padding: 22px 20px 24px 104px;
+
+
+        .title {
+          font-family: 'Prosto One', cursive;
+          font-size: 40px;
+          line-height: 50px;
+          position: relative;
+          color: #161616;
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 94px;
+            height: 1px;
+            left: -105px;
+            top: 25px;
+            background: #161616;
+            z-index: 10;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            left: -18px;
+            top: 22px;
+            background: #161616;
+            z-index: 10;
+            border-radius: 20px;
+          }
+        }
+      }
+
+      p {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .list-wrap {
+      padding: 34px 20px 20px 70px;
+      position: relative;
+      max-height: 630px;
+
+      .holder-btn {
+        display: none;
+      }
+
+      .decor {
+        position: absolute;
+        right: -85px;
+        bottom: -14px;
+        z-index: -3;
+      }
+
+      .list-statistics {
+        position: relative;
+
+        :nth-child(4) {
+          &:after {
+            display: none;
+          }
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 2000px;
+          height: 592px;
+          left: -1657px;
+          top: -33px;
+          background: #F8F8F8;
+          z-index: -1;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 413px;
+          height: 461px;
+          right: -96px;
+          bottom: -59px;
+          border: 1px solid #C0C0C0;
+          z-index: -6;
+        }
+        li {
+          margin-bottom: 50px;
+          position: relative;
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 418px;
+            height: 1px;
+            left: -77px;
+            bottom: -30px;
+            background: #E1E1E1;
+          }
+
+          strong {
+            font-family: 'Prosto One', cursive;
+            font-size: 60px;
+            line-height: 74px;
+            color: #488E9A;
+          }
+
+          p {
+            padding-left: 92px;
+            position: relative;
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 81px;
+              height: 1px;
+              left: 3px;
+              top: 11px;
+              background: #161616;
+            }
+          }
+        }
+      }
+
+    }
+
+    .text-area {
+      max-width: 756px;
+      position: relative;
+      top: 86px;
+
+      h5 {
+        font-family: 'Prosto One', cursive;
+        font-size: 25px;
+        line-height: 31px;
+        max-width: 457px;
+        margin-bottom: 18px;
+      }
+
+      p {
+        padding-right: 30px;
+        margin-bottom: 20px;
+      }
+
+      .holder-btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 45px;
+        margin-right: 7px;
+
+        .btn {
+          padding: 22px 58px 21px;
+        }
+      }
+    }
+
+  }
+
+  .documentation {
+    .title-area {
+      margin-top: 0;
+      padding-right: 0;
+      margin-bottom: 11px;
+      color: #161616;
+      padding: 22px 20px 24px 104px;
+      margin: 0 7px 0 -5px;
+
+
+      .title {
+        font-family: 'Prosto One', cursive;
+        font-size: 40px;
+        line-height: 50px;
+        position: relative;
+        color: #161616;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 94px;
+          height: 1px;
+          left: -105px;
+          top: 25px;
+          background: #161616;
+          z-index: 10;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          left: -18px;
+          top: 22px;
+          background: #161616;
+          z-index: 10;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  .documentation-slider {
+    max-width: 100%;
+    position: relative;
+    margin: 0 0 200px -21px;
+
+    .slick-dots {
+      display: flex;
+      margin-top: -26px;
+      position: relative;
+      bottom: -50px;
+      left: 800px;
+
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 344px;
+        height: 1px;
+        top: 15px;
+        left: 0;
+        background: #9D9D9D;
+      }
+
+      button {
+        font-size: 0;
+        background: #55B197;
+        border: none;
+        padding: 2px 12px;
+        position: relative;
+        z-index: 5;
+      }
+    }
+
+    .slick-slide {
+      padding: 0 15px;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    margin-top: -70px;
+    left: 0;
+    z-index: 5;
+    border: none;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    left: auto;
+    right: -31px;
+    bottom: -66px;
+    top: auto;
+    height: 40px;
+    width: 18px;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 0;
+    margin-right: 15px;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .slick-prev {
+    margin-right: 15px;
+
+    &:after {
+      background-image: url(../images/vector-3.png);
+      transform: rotate(0deg);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      top: 9px;
+      left: -108px;
+      color: #488E9A;
+    }
+  }
+
+  .slick-next {
+    margin-right: 55px;
+    left: 96%;
+
+    &:after {
+      background-image: url(../images/vector-3.png);
+      transform: rotate(-180deg);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      top: 9px;
+      left: 37px;
+      color: #A0A0A0;
+    }
+  }
+}
+
+@media (max-width: 1309px) {
+  .about-us {
+    .our-company-content {
+      margin-bottom: -13px;
+      img {
+        max-height: 390px;
+      }
+    }
+
+    .statistics {
+      .text-area {
+        max-width: 506px;
+      }
+    }
+
+    .documentation-slider {
+      .slick-dots {
+        left: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-us {
+    .breadcrumb {
+      margin-bottom: 10px;
+    }
+
+    .our-company-wrapper {
+      margin-bottom: 100px;
+    }
+
+    .our-company-content {
+      img {
+        max-height: 250px;
+      }
+      .our-company-text {
+        max-width: 380px;
+        .title-area {
+          padding: 22px 20px 6px 54px;
+        }
+      }
+    }
+
+    .statistics {
+      .text-area {
+        max-width: 400px;
+
+        h5 {
+          font-size: 23px;
+          padding-right: 5px;
+        }
+      }
+
+      .list-wrap {
+        padding: 34px 20px 20px 20px;
+
+        .decor {
+          right: -9px;
+          bottom: 6px;
+        }
+
+        .list-statistics {
+          &:before {
+            right: -22px;
+            bottom: -99px;
+          }
+
+          &:after {
+            left: -1717px;
+          }
+          li {
+            &:after {
+              width: 315px;
+            }
+
+            strong {
+              font-size: 40px;
+              line-height: 60px;
+            }
+          }
+        }
+      }
+    }
+
+    .documentation-slider {
+      margin: 0 23px 95px -9px;
+
+      .slick-dots {
+        left: 270px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us {
+    .breadcrumb-wrapper {
+      margin-top: 47px;
+
+      .breadcrumb {
+        padding: 13px 9px 0;
+        margin-bottom: 7px;
+      }
+
+      li {
+        a {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .our-company-content {
+      flex-direction: column-reverse;
+      margin: 0 5px -49px 0;
+
+      &:after {
+        height: 435px;
+        left: 187px;
+      }
+
+      .img-slogan {
+        margin-bottom: 16px;
+        .slogan {
+          font-size: 15px;
+          line-height: 22px;
+          max-width: 185px;
+          padding: 12px 0;
+        }
+      }
+
+      .our-company-text {
+        .title-area {
+          padding-right: 0;
+          margin-bottom: 1px;
+          padding: 22px 20px 6px 30px;
+
+          .title {
+            font-size: 25px;
+            line-height: 30px;
+
+            &:before {
+              width: 5px;
+              height: 5px;
+              left: -8px;
+              top: 6px;
+            }
+
+            &:after {
+              width: 21px;
+              height: 1px;
+              left: -27px;
+              top: 8px;
+            }
+          }
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 18px;
+          padding-right: 0;
+        }
+      }
+    }
+
+    .statistics {
+      flex-direction: column-reverse;
+
+      .text-area {
+        margin-bottom: 94px;
+        h5 {
+          font-size: 17px;
+          line-height: 25px;
+          margin-bottom: 12px;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 18px;
+          padding-right: 5px;
+          margin-bottom: 13px;
+        }
+
+        .holder-btn {
+          display: none;
+        }
+      }
+
+      .list-wrap {
+        padding: 22px 20px 20px 0;
+        margin-bottom: 20px;
+
+        .holder-btn {
+          display: block;
+          justify-content: center;
+          position: relative;
+          top: 83px;
+
+          .btn {
+            padding: 14px 28px;
+          }
+        }
+
+        .list-statistics {
+          &:after {
+            left: -1771px;
+            height: 372px;
+          }
+
+          &:before {
+            width: 413px;
+            height: 210px;
+            right: -22px;
+            bottom: -52px;
+          }
+          li {
+            margin-bottom: 14px;
+
+            &:after {
+              width: 306px;
+              bottom: -7px;
+            }
+            strong {
+              line-height: 50px;
+            }
+
+            p {
+              font-size: 15px;
+              line-height: 19px;
+              padding-left: 48px;
+
+              &:before {
+                width: 41px;
+                left: -3px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .documentation {
+      .title-area {
+        padding: 22px 20px 24px 24px;
+
+        .title {
+          font-size: 25px;
+          line-height: 30px;
+
+          &:before {
+            width: 5px;
+            height: 5px;
+            left: -8px;
+            top: 9px;
+          }
+
+          &:after {
+            width: 14px;
+            height: 1px;
+            left: -18px;
+            top: 11px;
+          }
+        }
+      }
+    }
+
+    .documentation-slider {
+      margin: 0 20px 104px 16px;
+
+      .slick-dots {
+        left: 75px;
+
+        &:after {
+          width: 128px;
+        }
+
+        button {
+          padding: 2px 3px;
+        }
+      }
+
+      .slick-next {
+        left: 81%;
+      }
+
+      }
+
+
+
+
+  }
+
+
+
+
+}
+
+
