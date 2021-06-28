@@ -2584,23 +2584,32 @@ h6 {
     color: #000;
     text-decoration: underline; }
 
-.blog-page .moving {
+.blog-page .wrapper-content {
   display: flex; }
-  .blog-page .moving .list-left {
+  .blog-page .wrapper-content .list-left {
     width: 40%;
-    padding: 0 0 0 44px; }
-    .blog-page .moving .list-left :nth-child(1):after,
-    .blog-page .moving .list-left :nth-child(6):after {
+    padding: 0 0 0 44px;
+    position: relative; }
+    .blog-page .wrapper-content .list-left:before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 1530px;
+      top: 0;
+      right: 0;
+      background: #EBEBEB; }
+    .blog-page .wrapper-content .list-left :nth-child(1):after,
+    .blog-page .wrapper-content .list-left :nth-child(6):after {
       display: none; }
-    .blog-page .moving .list-left .date {
+    .blog-page .wrapper-content .list-left .date {
       font-size: 14px;
       line-height: 17px;
       color: #717171;
       margin-bottom: 10px; }
-    .blog-page .moving .list-left li {
+    .blog-page .wrapper-content .list-left li {
       margin-bottom: 50px;
       position: relative; }
-      .blog-page .moving .list-left li:after {
+      .blog-page .wrapper-content .list-left li:after {
         content: "";
         position: absolute;
         width: 478px;
@@ -2608,27 +2617,19 @@ h6 {
         left: -38px;
         bottom: -22px;
         background: #EBEBEB; }
-      .blog-page .moving .list-left li:before {
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 1553px;
-        top: 0;
-        right: 0;
-        background: #EBEBEB; }
-      .blog-page .moving .list-left li p {
+      .blog-page .wrapper-content .list-left li p {
         padding-right: 30px; }
-    .blog-page .moving .list-left .title-area {
+    .blog-page .wrapper-content .list-left .title-area {
       margin-top: 0;
       padding-right: 90px;
       margin-bottom: 11px; }
-      .blog-page .moving .list-left .title-area .title {
+      .blog-page .wrapper-content .list-left .title-area .title {
         font-family: 'Prosto One', cursive;
         font-size: 20px;
         line-height: 25px;
         position: relative;
         color: #161616; }
-        .blog-page .moving .list-left .title-area .title:after {
+        .blog-page .wrapper-content .list-left .title-area .title:after {
           content: "";
           position: absolute;
           width: 35px;
@@ -2637,7 +2638,7 @@ h6 {
           top: 11px;
           background: #161616;
           z-index: 10; }
-        .blog-page .moving .list-left .title-area .title:before {
+        .blog-page .wrapper-content .list-left .title-area .title:before {
           content: "";
           position: absolute;
           width: 7px;
@@ -2647,36 +2648,38 @@ h6 {
           background: #161616;
           z-index: 10;
           border-radius: 20px; }
-  .blog-page .moving .list-right {
-    width: 60%;
+  .blog-page .wrapper-content .moving .list-right {
     position: relative;
-    top: -63px;
-    padding: 0 0 0 24px; }
-    .blog-page .moving .list-right li {
-      margin-bottom: 38px; }
-      .blog-page .moving .list-right li .date {
+    top: -65px;
+    padding: 0 0 0 21px; }
+    .blog-page .wrapper-content .moving .list-right li {
+      margin-bottom: -29px; }
+      .blog-page .wrapper-content .moving .list-right li img {
+        margin-top: 66px;
+        margin-bottom: 7px; }
+      .blog-page .wrapper-content .moving .list-right li .date {
         font-size: 14px;
         line-height: 17px;
         color: #717171;
         display: block;
         margin-bottom: 8px; }
-      .blog-page .moving .list-right li div {
+      .blog-page .wrapper-content .moving .list-right li div {
         padding: 11px 0 10px 108px; }
-      .blog-page .moving .list-right li p {
+      .blog-page .wrapper-content .moving .list-right li p {
         padding-right: 32px; }
-      .blog-page .moving .list-right li .title-area {
+      .blog-page .wrapper-content .moving .list-right li .title-area {
         margin-top: 0;
         padding-right: 0;
         margin-bottom: 15px;
         padding: 0;
         width: 75%; }
-        .blog-page .moving .list-right li .title-area .title {
+        .blog-page .wrapper-content .moving .list-right li .title-area .title {
           font-family: 'Prosto One', cursive;
           font-size: 25px;
           line-height: 31px;
           position: relative;
           color: #161616; }
-          .blog-page .moving .list-right li .title-area .title:after {
+          .blog-page .wrapper-content .moving .list-right li .title-area .title:after {
             content: "";
             position: absolute;
             width: 90px;
@@ -2685,7 +2688,7 @@ h6 {
             top: 16px;
             background: #161616;
             z-index: 10; }
-          .blog-page .moving .list-right li .title-area .title:before {
+          .blog-page .wrapper-content .moving .list-right li .title-area .title:before {
             content: "";
             position: absolute;
             width: 7px;
@@ -2696,9 +2699,14 @@ h6 {
             z-index: 10;
             border-radius: 20px; }
 
+.blog-page .footer .side-border:after, .blog-page .footer .side-border:before {
+  height: 522px; }
+
 .blog-page .feedback-slider {
-  max-width: 100%;
-  position: relative; }
+  max-width: 61%;
+  position: relative;
+  top: -64px;
+  margin-right: -7px; }
   .blog-page .feedback-slider .slick-slide {
     padding: 0 15px; }
   .blog-page .feedback-slider .slick-dots {
@@ -2735,8 +2743,8 @@ h6 {
 .blog-page .slick-next {
   position: absolute;
   left: auto;
-  right: -20px;
-  bottom: 23px;
+  right: -14px;
+  bottom: -44px;
   top: auto;
   height: 40px;
   width: 18px;
@@ -2778,8 +2786,8 @@ h6 {
 
 .blog-page .feedback-slider .slick-dots {
   position: absolute;
-  right: 98px;
-  bottom: 34px; }
+  right: 101px;
+  bottom: -34px; }
   .blog-page .feedback-slider .slick-dots button {
     font-size: 15px;
     padding: 1px 4px;
@@ -2791,23 +2799,25 @@ h6 {
     background: #488E9A; }
 
 @media (max-width: 1309px) {
-  .blog-page .moving .list-left li:after {
+  .blog-page .wrapper-content .list-left li:after {
     width: 358px; } }
 
 @media (max-width: 1023px) {
   .blog-page .breadcrumb {
     margin-bottom: 25px; }
-  .blog-page .moving .list-left {
+  .blog-page .wrapper-content .list-left {
     padding: 0 0 0 4px; }
-    .blog-page .moving .list-left li:after {
+    .blog-page .wrapper-content .list-left .title-area {
+      padding-right: 0; }
+    .blog-page .wrapper-content .list-left li:after {
       width: 268px; }
-  .blog-page .moving .list-right {
+  .blog-page .wrapper-content .moving .list-right {
     top: 0; }
-    .blog-page .moving .list-right li div {
+    .blog-page .wrapper-content .moving .list-right li div {
       padding: 11px 0 10px 18px; }
-    .blog-page .moving .list-right li .title-area {
+    .blog-page .wrapper-content .moving .list-right li .title-area {
       width: 100%; }
-      .blog-page .moving .list-right li .title-area .title:after {
+      .blog-page .wrapper-content .moving .list-right li .title-area .title:after {
         width: 20px;
         left: -40px; } }
 
@@ -2815,59 +2825,61 @@ h6 {
   .blog-page .breadcrumb {
     font-size: 13px;
     line-height: 16px; }
-  .blog-page .moving {
+  .blog-page .wrapper-content {
     flex-direction: column; }
-    .blog-page .moving .list-left {
+    .blog-page .wrapper-content .list-left {
       width: 100%; }
-      .blog-page .moving .list-left li p {
+      .blog-page .wrapper-content .list-left li p {
         font-size: 15px;
         line-height: 19px;
         padding-right: 0; }
-      .blog-page .moving .list-left li:before {
+      .blog-page .wrapper-content .list-left li:before {
         display: none; }
-      .blog-page .moving .list-left li:after {
+      .blog-page .wrapper-content .list-left li:after {
         width: 298px; }
-      .blog-page .moving .list-left .title-area {
+      .blog-page .wrapper-content .list-left .title-area {
         padding-right: 0;
         margin-bottom: 1px; }
-        .blog-page .moving .list-left .title-area .title {
+        .blog-page .wrapper-content .list-left .title-area .title {
           font-size: 15px;
           line-height: 22px; }
-          .blog-page .moving .list-left .title-area .title:before {
+          .blog-page .wrapper-content .list-left .title-area .title:before {
             width: 5px;
             height: 5px;
             left: -8px;
             top: 6px; }
-    .blog-page .moving .list-right {
+    .blog-page .wrapper-content .moving .list-right {
       width: 100%;
       padding: 0; }
-      .blog-page .moving .list-right li .date {
+      .blog-page .wrapper-content .moving .list-right li .date {
         display: none; }
-      .blog-page .moving .list-right li p {
+      .blog-page .wrapper-content .moving .list-right li p {
         font-size: 15px;
         line-height: 19px;
         margin-right: 0; }
-      .blog-page .moving .list-right li div {
+      .blog-page .wrapper-content .moving .list-right li div {
         padding: 7px 0 10px 21px; }
-      .blog-page .moving .list-right li .title-area {
+      .blog-page .wrapper-content .moving .list-right li .title-area {
         margin-bottom: 3px; }
-        .blog-page .moving .list-right li .title-area .title {
+        .blog-page .wrapper-content .moving .list-right li .title-area .title {
           font-size: 15px;
           line-height: 22px; }
-          .blog-page .moving .list-right li .title-area .title:before {
+          .blog-page .wrapper-content .moving .list-right li .title-area .title:before {
             width: 5px;
             height: 5px;
             left: -9px;
             top: 6px; }
-          .blog-page .moving .list-right li .title-area .title:after {
+          .blog-page .wrapper-content .moving .list-right li .title-area .title:after {
             width: 20px;
             left: -27px;
             top: 8px; }
   .blog-page .slick-prev,
   .blog-page .slick-next {
-    bottom: 4px; }
-  .blog-page .feedback-slider .slick-dots {
-    bottom: 14px; } }
+    bottom: -55px; }
+  .blog-page .feedback-slider {
+    max-width: 100%; }
+    .blog-page .feedback-slider .slick-dots {
+      bottom: -46px; } }
 
 .banner-content .title-area {
   max-width: 610px;
