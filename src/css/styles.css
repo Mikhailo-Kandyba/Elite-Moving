@@ -3714,11 +3714,22 @@ h6 {
     color: #000;
     text-decoration: underline; }
 
-.article-page .moving {
-  display: flex; }
-  .article-page .moving .list-wrap {
-    width: 39%; }
-    .article-page .moving .list-wrap .title-list {
+.article-page .wrapper-content {
+  display: flex;
+  margin-bottom: 105px; }
+  .article-page .wrapper-content .list-wrap {
+    width: 39%;
+    margin-left: -6px;
+    position: relative; }
+    .article-page .wrapper-content .list-wrap:before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 1553px;
+      top: 0;
+      right: -18px;
+      background: #EBEBEB; }
+    .article-page .wrapper-content .list-wrap .title-list {
       display: block;
       background: #488E9A;
       color: #fff;
@@ -3726,7 +3737,7 @@ h6 {
       padding: 10px 10px 10px 70px;
       position: relative;
       margin-bottom: 23px; }
-      .article-page .moving .list-wrap .title-list:after {
+      .article-page .wrapper-content .list-wrap .title-list:after {
         content: "";
         position: absolute;
         width: 1px;
@@ -3735,20 +3746,20 @@ h6 {
         top: 11px;
         background: #FFFFFF;
         transform: rotate(30.03deg); }
-    .article-page .moving .list-wrap .list-left {
+    .article-page .wrapper-content .list-wrap .list-left {
       padding: 0 0 0 44px; }
-      .article-page .moving .list-wrap .list-left :nth-child(1):after,
-      .article-page .moving .list-wrap .list-left :nth-child(6):after {
+      .article-page .wrapper-content .list-wrap .list-left :nth-child(1):after,
+      .article-page .wrapper-content .list-wrap .list-left :nth-child(6):after {
         display: none; }
-      .article-page .moving .list-wrap .list-left .date {
+      .article-page .wrapper-content .list-wrap .list-left .date {
         font-size: 14px;
         line-height: 17px;
         color: #717171;
         margin-bottom: 10px; }
-      .article-page .moving .list-wrap .list-left li {
-        margin-bottom: 50px;
+      .article-page .wrapper-content .list-wrap .list-left li {
+        margin-bottom: 49px;
         position: relative; }
-        .article-page .moving .list-wrap .list-left li:after {
+        .article-page .wrapper-content .list-wrap .list-left li:after {
           content: "";
           position: absolute;
           width: 478px;
@@ -3756,27 +3767,19 @@ h6 {
           left: -38px;
           bottom: -22px;
           background: #EBEBEB; }
-        .article-page .moving .list-wrap .list-left li:before {
-          content: "";
-          position: absolute;
-          width: 1px;
-          height: 1553px;
-          top: 0;
-          right: 0;
-          background: #EBEBEB; }
-        .article-page .moving .list-wrap .list-left li p {
-          padding-right: 0; }
-      .article-page .moving .list-wrap .list-left .title-area {
+        .article-page .wrapper-content .list-wrap .list-left li p {
+          padding-right: 10px; }
+      .article-page .wrapper-content .list-wrap .list-left .title-area {
         margin-top: 0;
-        padding-right: 60px;
+        padding-right: 70px;
         margin-bottom: 11px; }
-        .article-page .moving .list-wrap .list-left .title-area .title {
+        .article-page .wrapper-content .list-wrap .list-left .title-area .title {
           font-family: 'Prosto One', cursive;
           font-size: 20px;
           line-height: 25px;
           position: relative;
           color: #161616; }
-          .article-page .moving .list-wrap .list-left .title-area .title:after {
+          .article-page .wrapper-content .list-wrap .list-left .title-area .title:after {
             content: "";
             position: absolute;
             width: 35px;
@@ -3785,7 +3788,7 @@ h6 {
             top: 11px;
             background: #161616;
             z-index: 10; }
-          .article-page .moving .list-wrap .list-left .title-area .title:before {
+          .article-page .wrapper-content .list-wrap .list-left .title-area .title:before {
             content: "";
             position: absolute;
             width: 7px;
@@ -3795,32 +3798,41 @@ h6 {
             background: #161616;
             z-index: 10;
             border-radius: 20px; }
-  .article-page .moving .moving-text {
-    width: 61%;
+  .article-page .wrapper-content .moving-text {
+    width: 100%;
     position: relative;
     top: -63px;
     padding: 0 0 0 24px; }
-    .article-page .moving .moving-text img {
-      margin-bottom: 79px; }
-    .article-page .moving .moving-text .title-date {
-      padding: 0 70px 0 133px; }
-      .article-page .moving .moving-text .title-date .date {
+    .article-page .wrapper-content .moving-text:before {
+      content: "";
+      position: absolute;
+      width: 737px;
+      height: 1px;
+      left: 0;
+      bottom: -22px;
+      background: #EBEBEB; }
+    .article-page .wrapper-content .moving-text img {
+      margin-bottom: 20px;
+      margin-top: 64px; }
+    .article-page .wrapper-content .moving-text .title-date {
+      padding: 0 70px 0 106px; }
+      .article-page .wrapper-content .moving-text .title-date .date {
         font-size: 14px;
         line-height: 17px;
         color: #717171;
         display: block;
         margin-bottom: 9px; }
-      .article-page .moving .moving-text .title-date .title-area {
+      .article-page .wrapper-content .moving-text .title-date .title-area {
         margin-top: 0;
-        padding-right: 60px;
+        padding-right: 70px;
         margin-bottom: 11px; }
-        .article-page .moving .moving-text .title-date .title-area .title {
+        .article-page .wrapper-content .moving-text .title-date .title-area .title {
           font-family: 'Prosto One', cursive;
           font-size: 25px;
           line-height: 31px;
           position: relative;
           color: #161616; }
-          .article-page .moving .moving-text .title-date .title-area .title:after {
+          .article-page .wrapper-content .moving-text .title-date .title-area .title:after {
             content: "";
             position: absolute;
             width: 35px;
@@ -3829,7 +3841,7 @@ h6 {
             top: 11px;
             background: #161616;
             z-index: 10; }
-          .article-page .moving .moving-text .title-date .title-area .title:before {
+          .article-page .wrapper-content .moving-text .title-date .title-area .title:before {
             content: "";
             position: absolute;
             width: 7px;
@@ -3839,17 +3851,17 @@ h6 {
             background: #161616;
             z-index: 10;
             border-radius: 20px; }
-    .article-page .moving .moving-text p {
+    .article-page .wrapper-content .moving-text p {
       margin-bottom: 21px; }
-    .article-page .moving .moving-text .text-weight-400 {
+    .article-page .wrapper-content .moving-text .text-weight-400 {
       line-height: 22px;
       font-weight: 600;
-      padding: 20px 0 9px 154px; }
+      padding: 20px 0 10px 130px; }
 
 .article-page .slider-article-page {
-  max-width: 100%;
+  max-width: 61%;
   position: relative;
-  margin: 0 0 0 -21px; }
+  margin: 0 0 0 3px; }
   .article-page .slider-article-page .slick-dots {
     display: none !important; }
   .article-page .slider-article-page .slick-slide {
@@ -3870,7 +3882,7 @@ h6 {
   position: absolute;
   left: auto;
   right: -20px;
-  bottom: 4px;
+  bottom: 0;
   top: auto;
   height: 40px;
   width: 18px;
@@ -3893,7 +3905,7 @@ h6 {
     background-position: center; }
 
 .article-page .slick-prev {
-  margin-right: 15px; }
+  margin-right: 22px; }
   .article-page .slick-prev:after {
     background-image: url(../images/vector-3.png);
     transform: rotate(0deg); }
@@ -3911,7 +3923,7 @@ h6 {
 
 .article-page .slick-next {
   margin-right: 55px;
-  left: 43%; }
+  left: 5%; }
   .article-page .slick-next:after {
     background-image: url(../images/vector-3.png);
     transform: rotate(-180deg); }
@@ -3928,117 +3940,135 @@ h6 {
     color: #A0A0A0; }
 
 @media (max-width: 1309px) {
-  .article-page .moving .list-wrap .list-left li:after {
-    width: 358px; } }
+  .article-page .side-border:after, .article-page .side-border:before {
+    height: 1340px; }
+  .article-page .wrapper-content .list-wrap .list-left li:after {
+    width: 358px; }
+  .article-page .wrapper-content .moving-text:before {
+    width: 567px; }
+  .article-page .wrapper-content .moving-text .title-date {
+    padding: 0 40px 0 56px; } }
 
 @media (max-width: 1023px) {
+  .article-page .side-border:after, .article-page .side-border:before {
+    height: 1460px; }
   .article-page .breadcrumb {
     margin-bottom: 25px; }
-  .article-page .moving .list-wrap .list-left {
+  .article-page .wrapper-content .list-wrap .list-left {
     padding: 0 0 0 4px; }
-    .article-page .moving .list-wrap .list-left .title-area {
+    .article-page .wrapper-content .list-wrap .list-left .title-area {
       width: 100%;
       padding-right: 0; }
-      .article-page .moving .list-wrap .list-left .title-area .title:after {
-        width: 20px;
-        left: -40px; }
-    .article-page .moving .list-wrap .list-left li:after {
+      .article-page .wrapper-content .list-wrap .list-left .title-area .title:after, .article-page .wrapper-content .list-wrap .list-left .title-area .title:before {
+        display: none; }
+    .article-page .wrapper-content .list-wrap .list-left li:after {
       width: 268px;
       left: 1px; }
-  .article-page .moving .moving-text {
-    top: 0; }
-    .article-page .moving .moving-text img {
+  .article-page .wrapper-content .moving-text {
+    top: -64px; }
+    .article-page .wrapper-content .moving-text:before {
+      width: 428px; }
+    .article-page .wrapper-content .moving-text img {
       margin-bottom: 9px; }
-    .article-page .moving .moving-text .title-date {
+    .article-page .wrapper-content .moving-text .title-date {
       padding: 0 0 0 25px; }
-    .article-page .moving .moving-text .text-weight-400 {
+      .article-page .wrapper-content .moving-text .title-date .title-area {
+        padding-right: 0; }
+    .article-page .wrapper-content .moving-text .text-weight-400 {
       padding: 20px 0 9px 54px; }
-    .article-page .moving .moving-text li div {
+    .article-page .wrapper-content .moving-text li div {
       padding: 11px 0 10px 18px; }
-    .article-page .moving .moving-text li .title-area {
+    .article-page .wrapper-content .moving-text li .title-area {
       width: 100%; }
-      .article-page .moving .moving-text li .title-area .title:after {
+      .article-page .wrapper-content .moving-text li .title-area .title:after {
         width: 20px;
         left: -40px; }
   .article-page .slick-prev,
   .article-page .slick-next {
-    bottom: -9px; } }
+    bottom: -9px; }
+  .article-page .footer {
+    min-height: 318px; }
+    .article-page .footer .side-border:after, .article-page .footer .side-border:before {
+      height: 500px; } }
 
 @media (max-width: 767px) {
   .article-page .breadcrumb {
     font-size: 13px;
     line-height: 16px; }
-  .article-page .moving {
+  .article-page .wrapper-content {
     flex-direction: column-reverse;
-    margin: 0 -7px 0 22px; }
-    .article-page .moving .list-wrap {
+    margin-bottom: 0; }
+    .article-page .wrapper-content .list-wrap {
       width: 100%; }
-      .article-page .moving .list-wrap .title-list {
+      .article-page .wrapper-content .list-wrap .title-list {
         font-size: 15px;
         line-height: 19px;
         padding: 6px 10px 5px 48px; }
-        .article-page .moving .list-wrap .title-list:after {
+        .article-page .wrapper-content .list-wrap .title-list:after {
           left: 32px;
           top: 7px; }
-      .article-page .moving .list-wrap .list-left .date {
+      .article-page .wrapper-content .list-wrap .list-left .date {
         display: none; }
-      .article-page .moving .list-wrap .list-left li p {
+      .article-page .wrapper-content .list-wrap .list-left li p {
         font-size: 15px;
         line-height: 19px;
         padding-right: 0; }
-      .article-page .moving .list-wrap .list-left li:before {
+      .article-page .wrapper-content .list-wrap .list-left li:before {
         display: none; }
-      .article-page .moving .list-wrap .list-left li:after {
+      .article-page .wrapper-content .list-wrap .list-left li:after {
         width: 298px; }
-      .article-page .moving .list-wrap .list-left .title-area {
+      .article-page .wrapper-content .list-wrap .list-left .title-area {
         padding-right: 0;
         margin-bottom: 1px; }
-        .article-page .moving .list-wrap .list-left .title-area .title {
+        .article-page .wrapper-content .list-wrap .list-left .title-area .title {
           font-size: 13px;
           line-height: 22px; }
-          .article-page .moving .list-wrap .list-left .title-area .title:before {
+          .article-page .wrapper-content .list-wrap .list-left .title-area .title:before {
             width: 5px;
             height: 5px;
             left: -8px;
             top: 6px; }
-    .article-page .moving .moving-text {
+    .article-page .wrapper-content .moving-text {
       width: 100%;
       padding: 0; }
-      .article-page .moving .moving-text .title-date .date {
+      .article-page .wrapper-content .moving-text .title-date .date {
         display: none; }
-      .article-page .moving .moving-text .title-date .title-area {
+      .article-page .wrapper-content .moving-text .title-date .title-area {
         margin-bottom: -8px;
         padding-right: 0; }
-        .article-page .moving .moving-text .title-date .title-area .title {
+        .article-page .wrapper-content .moving-text .title-date .title-area .title {
           font-size: 15px;
           line-height: 22px; }
-          .article-page .moving .moving-text .title-date .title-area .title:before {
+          .article-page .wrapper-content .moving-text .title-date .title-area .title:before {
             width: 5px;
             height: 5px;
             left: -9px;
             top: 6px; }
-          .article-page .moving .moving-text .title-date .title-area .title:after {
+          .article-page .wrapper-content .moving-text .title-date .title-area .title:after {
             width: 20px;
             left: -27px;
             top: 8px; }
-      .article-page .moving .moving-text p {
+      .article-page .wrapper-content .moving-text p {
         font-size: 15px;
         line-height: 22px;
         margin-right: 0;
         margin-bottom: 14px; }
-      .article-page .moving .moving-text .text-weight-400 {
-        padding: 0px 0 0px 48px; }
-      .article-page .moving .moving-text div {
+      .article-page .wrapper-content .moving-text .text-weight-400 {
+        padding: 0 0 0 48px; }
+      .article-page .wrapper-content .moving-text div {
         padding: 7px 0 10px 1px; }
   .article-page .slick-prev,
   .article-page .slick-next {
     bottom: 4px; }
   .article-page .feedback-slider .slick-dots {
     bottom: 14px; }
-  .article-page .slider-article-page .slick-slide {
-    padding: 0; }
+  .article-page .slider-article-page {
+    max-width: 100%;
+    margin: 0 5px 0 1px; }
+    .article-page .slider-article-page .slick-slide {
+      padding: 0; }
   .article-page .slick-next {
-    left: 7%; }
+    left: 0; }
     .article-page .slick-next:before {
       top: 12px;
       left: 22px;
