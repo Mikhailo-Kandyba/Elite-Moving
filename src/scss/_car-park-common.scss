@@ -192,6 +192,10 @@
     .blog-wrap {
       padding: 0 11px;
 
+      img {
+        margin-bottom: 17px;
+      }
+
       div {
         .date {
           font-size: 14px;
@@ -350,6 +354,11 @@
 
 @media (max-width: 1309px) {
   .car-park {
+    .header-wrapper {
+      &:after {
+        width: 1000px;
+      }
+    }
     .car-park-list {
       &:after {
         top: 33px;
@@ -387,6 +396,11 @@
 
 @media (max-width: 1023px) {
   .car-park {
+    .header-wrapper {
+      &:after {
+       display: none;
+      }
+    }
     .breadcrumb {
       margin-bottom: 0;
     }
@@ -592,21 +606,5 @@
       }
 
     }
-
-
-
-
-
-
-
-
-
   }
-
-
-
-
-
-
-
 }

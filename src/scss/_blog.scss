@@ -2,6 +2,15 @@
   .blog {
     background-image: url("../images/blog-banner.png");
     background-position: center;
+
+    .banner-content {
+      .title-area {
+        h5 {
+          font-size: 40px;
+          line-height: 45px;
+        }
+      }
+    }
   }
 
   .breadcrumb {
