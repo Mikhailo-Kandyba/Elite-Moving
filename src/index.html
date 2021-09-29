@@ -470,51 +470,26 @@
                                 </div>
                             </li>
                         </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="photos-of-employees-seal-text">
-                            <div class="photos-of-employees">
-                                <div class="">
-                                    <div class="background">
-                                        <img class="photo" src="../images/slide-photo-1.png" alt="photo">
+                        <div class="wrap-content">
+                            <div class="slider-wrap">
+                                <div class="slider-photos">
+                                    <div>
+                                        <img src="../images/slide-photo-1.png" alt="photo">
+                                    </div>
+                                    <div>
+                                        <img src="../images/slide-photo-2.png" alt="photo">
+                                    </div>
+                                    <div>
+                                        <img src="../images/slide-photo-1.png" alt="photo">
                                     </div>
                                 </div>
-                                <div class="">
-                                    <div class="background">
-                                        <img class="photo" src="../images/slide-photo-2.png" alt="photo">
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="background">
-                                        <img class="photo" src="../images/slide-photo-1.png" alt="photo">
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="background">
-                                        <img class="photo" src="../images/slide-photo-2.png" alt="photo">
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="background">
-                                        <img class="photo" src="../images/slide-photo-2.png" alt="photo">
-                                    </div>
+                                <div class="btn-holder">
+                                    <button class="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    </button>
                                 </div>
                             </div>
                             <div class="seal-text z-index">
@@ -525,23 +500,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </div>
                 </section>
             </div>
@@ -865,8 +823,10 @@
 
 
         <!--js карусель-->
-      $('.photos-of-employees').slick({
+      $('.slider-photos').slick({
         dots: true,
+          prevArrow: $('.prev'),
+          nextArrow: $('.next'),
         infinite: true,
         speed: 300,
         slidesToShow: 2,

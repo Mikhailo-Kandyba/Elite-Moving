@@ -1054,7 +1054,7 @@ h6 {
   background-size: cover;
   min-height: 759px;
   position: relative;
-  padding-top: 81px;
+  padding: 80px 0;
   margin-bottom: 161px; }
   .staff-background:after {
     content: "";
@@ -1104,12 +1104,11 @@ h6 {
           right: 103px; }
 
 .staff-wrapper .wrap-slid-list {
-  display: flex; }
+  display: flex;
+  margin: 0 7px 0 0; }
   .staff-wrapper .wrap-slid-list .service-guarantee {
-    max-width: 512px;
-    padding-left: 43px;
-    padding-top: 18px;
-    margin-right: 23px; }
+    width: 50%;
+    padding: 0 20px 0 45px; }
     .staff-wrapper .wrap-slid-list .service-guarantee :nth-child(2) div p {
       margin-bottom: -18px; }
     .staff-wrapper .wrap-slid-list .service-guarantee :nth-child(3) div p {
@@ -1131,109 +1130,91 @@ h6 {
       color: #fff;
       margin-bottom: -8px; }
 
-.photos-of-employees {
-  width: 738px; }
-  .photos-of-employees .background {
-    position: relative;
-    height: 380px;
-    width: 95%;
-    overflow: hidden; }
-    .photos-of-employees .background:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 95%;
-      height: 100%;
-      z-index: 5;
-      background: #EDEDED;
-      opacity: 0.3; }
-    .photos-of-employees .background .photo {
-      height: 100%; }
-
-.photos-of-employees button {
-  border-radius: 5px;
-  padding: 15px; }
-
-.slick-current {
-  width: 387px !important; }
-
-.slick-track {
-  width: 4518px !important; }
-
-.slick-prev, .slick-next {
-  font-size: 0;
-  background: transparent;
-  border: none;
-  z-index: 20;
-  position: absolute;
-  left: auto;
-  right: 0;
-  top: auto;
-  bottom: 0;
-  margin: 20px; }
-  .slick-prev:after, .slick-next:after {
+.slider-photos .slick-slide {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 0 10px; }
+  .slider-photos .slick-slide:after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 0;
+    top: 0;
+    left: 10px;
     right: 0;
-    bottom: 9px;
-    background-image: url("../images/vector-2.png");
-    background-repeat: no-repeat; }
-  .slick-prev:hover, .slick-next:hover {
-    background: transparent; }
-
-.slick-next {
-  margin-left: 70px; }
-  .slick-next:after {
-    bottom: 8px; }
-
-.slick-prev:after {
-  transform: rotate(180deg); }
-
-.slick-arrow {
-  position: absolute;
-  left: 60%;
-  transform: translate(-60%, 0);
-  margin-bottom: -10px; }
+    bottom: 0;
+    z-index: 5;
+    background: #EDEDED;
+    opacity: 0.3; }
 
 .slick-dots {
   display: flex;
   position: relative;
   max-width: 350px;
-  margin-top: 20px; }
-  .slick-dots:after {
+  margin-top: 20px;
+  margin-left: 10px; }
+  .slick-dots::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
-    height: 1px;
     bottom: 4px;
+    height: 1px;
     background: #fff; }
+  .slick-dots li {
+    position: relative;
+    z-index: 5;
+    flex-grow: 1; }
   .slick-dots button {
     font-size: 0;
     background: transparent;
     border: none;
-    padding: 2px 30px;
-    position: relative; }
-  .slick-dots .slick-active {
-    position: relative; }
-    .slick-dots .slick-active::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 2px;
-      width: 120px;
-      height: 5px;
-      border-radius: 5px;
-      background: #55B197;
-      z-index: 5; }
+    height: 5px;
+    width: 100%;
+    padding: 0; }
+  .slick-dots .slick-active button {
+    background: #55B197;
+    border-radius: 5px; }
+
+.prev, .next {
+  width: 20px;
+  height: 30px;
+  background: transparent;
+  position: relative;
+  border: none;
+  margin: 0 10px;
+  padding: 0; }
+  .prev:after, .next:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    bottom: 9px;
+    right: 0;
+    background-image: url("../images/vector-2.png");
+    background-repeat: no-repeat; }
+  .prev:hover, .next:hover {
+    background: transparent; }
+
+.prev:after {
+  transform: rotate(180deg); }
+
+.slick-slide img {
+  width: 100%; }
+
+.slider-wrap {
+  position: relative;
+  margin-bottom: 100px; }
+  .slider-wrap .btn-holder {
+    position: absolute;
+    left: 60%;
+    bottom: -3%;
+    transform: translate(-60%, 0); }
+
+.wrap-content {
+  max-width: 754px; }
 
 .seal-text {
   display: flex;
   justify-content: flex-end;
-  margin-top: 67px;
   margin-right: 1px;
   position: relative; }
   .seal-text .text {
